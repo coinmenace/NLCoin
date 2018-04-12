@@ -1,10 +1,6 @@
 NLCoin v0.0.1
 ===============================
 
-`master:` [![Build Status](https://travis-ci.org/protoncoin/protoncoin.svg?branch=master)](https://travis-ci.org/protoncoin/protoncoin)
-
-https://protoncoin.io
-
 
 What is NLCoin?
 ----------------
