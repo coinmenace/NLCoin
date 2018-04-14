@@ -45,7 +45,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Proton coin will start 25 Dec 2017";
+    const char* pszTimestamp = "Proton coin will start 14 April 2018";
     const CScript genesisOutputScript = CScript() << ParseHex("040a3ada5ba6280b99f49a92ba47221e6a72af844ec49d0c8bbdae1ec09a4c79b22e42eefe670ae04490556f91780eb57de76493d020c91d0c421c2fa052b28a2b") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -124,11 +124,12 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x00000e1728b630fd83aecbc51546c7915fffb7d3c897b5fd8c4b14043070b7f0"));
         assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
-        vSeeds.push_back(CDNSSeedData("protoncoin1", "seed1.protoncoin.info"));
-        vSeeds.push_back(CDNSSeedData("protoncoin2", "seed2.protoncoin.info"));
-        vSeeds.push_back(CDNSSeedData("protoncoin3", "seed3.protoncoin.info"));
-        vSeeds.push_back(CDNSSeedData("protoncoin4", "seed4.protoncoin.info"));
-        vSeeds.push_back(CDNSSeedData("dnsseed", "dnsseed.protoncoin.info"));
+        vSeeds.push_back(CDNSSeedData("protoncoin1", "node1.mobilipia.com"));
+        vSeeds.push_back(CDNSSeedData("protoncoin2", "node2.mobilipia.com"));
+        //vSeeds.push_back(CDNSSeedData("protoncoin3", "seed3.protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("protoncoin4", "seed4.protoncoin.info"));
+        // vSeeds.push_back(CDNSSeedData("dnsseed", "dnsseed.protoncoin.info"));
+        vSeeds.push_back(CDNSSeedData("dnsseed", "node3.mobilipia.com"));
 
         // Proton addresses start with 'P'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,55);
