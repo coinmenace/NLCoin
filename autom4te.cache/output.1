@@ -915,6 +915,7 @@ infodir
 docdir
 oldincludedir
 includedir
+runstatedir
 localstatedir
 sharedstatedir
 sysconfdir
@@ -1084,6 +1085,7 @@ datadir='${datarootdir}'
 sysconfdir='${prefix}/etc'
 sharedstatedir='${prefix}/com'
 localstatedir='${prefix}/var'
+runstatedir='${localstatedir}/run'
 includedir='${prefix}/include'
 oldincludedir='/usr/include'
 docdir='${datarootdir}/doc/${PACKAGE_TARNAME}'
@@ -1336,6 +1338,15 @@ do
   | -silent | --silent | --silen | --sile | --sil)
     silent=yes ;;
 
+  -runstatedir | --runstatedir | --runstatedi | --runstated \
+  | --runstate | --runstat | --runsta | --runst | --runs \
+  | --run | --ru | --r)
+    ac_prev=runstatedir ;;
+  -runstatedir=* | --runstatedir=* | --runstatedi=* | --runstated=* \
+  | --runstate=* | --runstat=* | --runsta=* | --runst=* | --runs=* \
+  | --run=* | --ru=* | --r=*)
+    runstatedir=$ac_optarg ;;
+
   -sbindir | --sbindir | --sbindi | --sbind | --sbin | --sbi | --sb)
     ac_prev=sbindir ;;
   -sbindir=* | --sbindir=* | --sbindi=* | --sbind=* | --sbin=* \
@@ -1473,7 +1484,7 @@ fi
 for ac_var in	exec_prefix prefix bindir sbindir libexecdir datarootdir \
 		datadir sysconfdir sharedstatedir localstatedir includedir \
 		oldincludedir docdir infodir htmldir dvidir pdfdir psdir \
-		libdir localedir mandir
+		libdir localedir mandir runstatedir
 do
   eval ac_val=\$$ac_var
   # Remove trailing slashes.
@@ -1626,6 +1637,7 @@ Fine tuning of the installation directories:
   --sysconfdir=DIR        read-only single-machine data [PREFIX/etc]
   --sharedstatedir=DIR    modifiable architecture-independent data [PREFIX/com]
   --localstatedir=DIR     modifiable single-machine data [PREFIX/var]
+  --runstatedir=DIR       modifiable per-process data [LOCALSTATEDIR/run]
   --libdir=DIR            object code libraries [EPREFIX/lib]
   --includedir=DIR        C header files [PREFIX/include]
   --oldincludedir=DIR     C header files for non-gcc [/usr/include]
@@ -5629,8 +5641,8 @@ esac
 
 
 
-macro_version='2.4.5'
-macro_revision='2.4.5'
+macro_version='2.4.6'
+macro_revision='2.4.6'
 
     
     
@@ -7585,7 +7597,7 @@ linux* | k*bsd*-gnu | kopensolaris*-gnu | gnu*)
   lt_cv_deplibs_check_method=pass_all
   ;;
 
-netbsd*)
+netbsd* | netbsdelf*-gnu)
   if echo __ELF__ | $CC -E - | $GREP __ELF__ > /dev/null; then
     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|_pic\.a)$'
   else
@@ -9750,7 +9762,7 @@ func_munge_path_list ()
     x)
         ;;
     *:)
-        eval @S|@1=\"`$ECHO @S|@2 | $SED 's/:/ /g'` \S|@1\"
+        eval @S|@1=\"`$ECHO @S|@2 | $SED 's/:/ /g'` \@S|@@S|@1\"
         ;;
     x:*)
         eval @S|@1=\"\@S|@@S|@1 `$ECHO @S|@2 | $SED 's/:/ /g'`\"
@@ -11287,6 +11299,9 @@ $as_echo_n "checking whether the $compiler linker ($LD) supports shared librarie
   openbsd* | bitrig*)
     with_gnu_ld=no
     ;;
+  linux* | k*bsd*-gnu | gnu*)
+    link_all_deplibs=no
+    ;;
   esac
 
   ld_shlibs=yes
@@ -11541,7 +11556,7 @@ _LT_EOF
       fi
       ;;
 
-    netbsd*)
+    netbsd* | netbsdelf*-gnu)
       if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
 	archive_cmds='$LD -Bshareable $libobjs $deplibs $linker_flags -o $lib'
 	wlarc=
@@ -12211,6 +12226,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
 	if test yes = "$lt_cv_irix_exported_symbol"; then
           archive_expsym_cmds='$CC -shared $pic_flag $libobjs $deplibs $compiler_flags $wl-soname $wl$soname `test -n "$verstring" && func_echo_all "$wl-set_version $wl$verstring"` $wl-update_registry $wl$output_objdir/so_locations $wl-exports_file $wl$export_symbols -o $lib'
 	fi
+	link_all_deplibs=no
       else
 	archive_cmds='$CC -shared $libobjs $deplibs $compiler_flags -soname $soname `test -n "$verstring" && func_echo_all "-set_version $verstring"` -update_registry $output_objdir/so_locations -o $lib'
 	archive_expsym_cmds='$CC -shared $libobjs $deplibs $compiler_flags -soname $soname `test -n "$verstring" && func_echo_all "-set_version $verstring"` -update_registry $output_objdir/so_locations -exports_file $export_symbols -o $lib'
@@ -12232,7 +12248,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
       esac
       ;;
 
-    netbsd*)
+    netbsd* | netbsdelf*-gnu)
       if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
 	archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'  # a.out
       else
@@ -13347,6 +13363,18 @@ fi
   dynamic_linker='GNU/Linux ld.so'
   ;;
 
+netbsdelf*-gnu)
+  version_type=linux
+  need_lib_prefix=no
+  need_version=no
+  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
+  soname_spec='${libname}${release}${shared_ext}$major'
+  shlibpath_var=LD_LIBRARY_PATH
+  shlibpath_overrides_runpath=no
+  hardcode_into_libs=yes
+  dynamic_linker='NetBSD ld.elf_so'
+  ;;
+
 netbsd*)
   version_type=sunos
   need_lib_prefix=no
@@ -13562,12 +13590,19 @@ if test set = "${lt_cv_sys_lib_dlsearch_path_spec+set}"; then
   sys_lib_dlsearch_path_spec=$lt_cv_sys_lib_dlsearch_path_spec
 fi
 
-# lt_cv_sys_lib... is unaugmented for libtool script decls...
-lt_cv_sys_lib_dlsearch_path_spec=$sys_lib_dlsearch_path_spec
+# remember unaugmented sys_lib_dlsearch_path content for libtool script decls...
+configure_time_dlsearch_path=$sys_lib_dlsearch_path_spec
 
-# ..but sys_lib_... needs LT_SYS_LIBRARY_PATH munging for
-# LT_SYS_DLSEARCH_PATH macro in ltdl.m4 to work with the correct paths:
+# ... but it needs LT_SYS_LIBRARY_PATH munging for other configure-time code
 func_munge_path_list sys_lib_dlsearch_path_spec "$LT_SYS_LIBRARY_PATH"
+
+# to be used as default LT_SYS_LIBRARY_PATH value in generated libtool
+configure_time_lt_sys_library_path=$LT_SYS_LIBRARY_PATH
+
+
+    
+    
+    
 
 
     
@@ -16234,7 +16269,7 @@ lt_prog_compiler_static_CXX=
 	    ;;
 	esac
 	;;
-      netbsd*)
+      netbsd* | netbsdelf*-gnu)
 	;;
       *qnx* | *nto*)
         # QNX uses GNU C++, but need to define -shared option too, otherwise
@@ -16608,6 +16643,9 @@ $as_echo_n "checking whether the $compiler linker ($LD) supports shared librarie
       exclude_expsyms_CXX='[_]+GLOBAL_OFFSET_TABLE_|[_]+GLOBAL__[FID]_.*|[_]+head_[A-Za-z0-9_]+_dll|[A-Za-z0-9_]+_dll_iname'
       ;;
     esac
+    ;;
+  linux* | k*bsd*-gnu | gnu*)
+    link_all_deplibs_CXX=no
     ;;
   *)
     export_symbols_cmds_CXX='$NM $libobjs $convenience | $global_symbol_pipe | $SED '\''s/.* //'\'' | sort | uniq > $export_symbols'
@@ -17302,6 +17340,18 @@ fi
   dynamic_linker='GNU/Linux ld.so'
   ;;
 
+netbsdelf*-gnu)
+  version_type=linux
+  need_lib_prefix=no
+  need_version=no
+  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
+  soname_spec='${libname}${release}${shared_ext}$major'
+  shlibpath_var=LD_LIBRARY_PATH
+  shlibpath_overrides_runpath=no
+  hardcode_into_libs=yes
+  dynamic_linker='NetBSD ld.elf_so'
+  ;;
+
 netbsd*)
   version_type=sunos
   need_lib_prefix=no
@@ -17517,12 +17567,16 @@ if test set = "${lt_cv_sys_lib_dlsearch_path_spec+set}"; then
   sys_lib_dlsearch_path_spec=$lt_cv_sys_lib_dlsearch_path_spec
 fi
 
-# lt_cv_sys_lib... is unaugmented for libtool script decls...
-lt_cv_sys_lib_dlsearch_path_spec=$sys_lib_dlsearch_path_spec
+# remember unaugmented sys_lib_dlsearch_path content for libtool script decls...
+configure_time_dlsearch_path=$sys_lib_dlsearch_path_spec
 
-# ..but sys_lib_... needs LT_SYS_LIBRARY_PATH munging for
-# LT_SYS_DLSEARCH_PATH macro in ltdl.m4 to work with the correct paths:
+# ... but it needs LT_SYS_LIBRARY_PATH munging for other configure-time code
 func_munge_path_list sys_lib_dlsearch_path_spec "$LT_SYS_LIBRARY_PATH"
+
+# to be used as default LT_SYS_LIBRARY_PATH value in generated libtool
+configure_time_lt_sys_library_path=$LT_SYS_LIBRARY_PATH
+
+
 
 
 
@@ -22237,7 +22291,7 @@ else
     We can't simply define LARGE_OFF_T to be 9223372036854775807,
     since some C++ compilers masquerading as C compilers
     incorrectly reject 9223372036854775807.  */
-@%:@define LARGE_OFF_T (((off_t) 1 << 62) - 1 + ((off_t) 1 << 62))
+@%:@define LARGE_OFF_T ((((off_t) 1 << 31) << 31) - 1 + (((off_t) 1 << 31) << 31))
   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
 		       && LARGE_OFF_T % 2147483647 == 1)
 		      ? 1 : -1];
@@ -22283,7 +22337,7 @@ else
     We can't simply define LARGE_OFF_T to be 9223372036854775807,
     since some C++ compilers masquerading as C compilers
     incorrectly reject 9223372036854775807.  */
-@%:@define LARGE_OFF_T (((off_t) 1 << 62) - 1 + ((off_t) 1 << 62))
+@%:@define LARGE_OFF_T ((((off_t) 1 << 31) << 31) - 1 + (((off_t) 1 << 31) << 31))
   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
 		       && LARGE_OFF_T % 2147483647 == 1)
 		      ? 1 : -1];
@@ -22307,7 +22361,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
     We can't simply define LARGE_OFF_T to be 9223372036854775807,
     since some C++ compilers masquerading as C compilers
     incorrectly reject 9223372036854775807.  */
-@%:@define LARGE_OFF_T (((off_t) 1 << 62) - 1 + ((off_t) 1 << 62))
+@%:@define LARGE_OFF_T ((((off_t) 1 << 31) << 31) - 1 + (((off_t) 1 << 31) << 31))
   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
 		       && LARGE_OFF_T % 2147483647 == 1)
 		      ? 1 : -1];
@@ -22352,7 +22406,7 @@ else
     We can't simply define LARGE_OFF_T to be 9223372036854775807,
     since some C++ compilers masquerading as C compilers
     incorrectly reject 9223372036854775807.  */
-@%:@define LARGE_OFF_T (((off_t) 1 << 62) - 1 + ((off_t) 1 << 62))
+@%:@define LARGE_OFF_T ((((off_t) 1 << 31) << 31) - 1 + (((off_t) 1 << 31) << 31))
   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
 		       && LARGE_OFF_T % 2147483647 == 1)
 		      ? 1 : -1];
@@ -22376,7 +22430,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
     We can't simply define LARGE_OFF_T to be 9223372036854775807,
     since some C++ compilers masquerading as C compilers
     incorrectly reject 9223372036854775807.  */
-@%:@define LARGE_OFF_T (((off_t) 1 << 62) - 1 + ((off_t) 1 << 62))
+@%:@define LARGE_OFF_T ((((off_t) 1 << 31) << 31) - 1 + (((off_t) 1 << 31) << 31))
   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
 		       && LARGE_OFF_T % 2147483647 == 1)
 		      ? 1 : -1];
@@ -32233,7 +32287,8 @@ finish_cmds='`$ECHO "$finish_cmds" | $SED "$delay_single_quote_subst"`'
 finish_eval='`$ECHO "$finish_eval" | $SED "$delay_single_quote_subst"`'
 hardcode_into_libs='`$ECHO "$hardcode_into_libs" | $SED "$delay_single_quote_subst"`'
 sys_lib_search_path_spec='`$ECHO "$sys_lib_search_path_spec" | $SED "$delay_single_quote_subst"`'
-lt_cv_sys_lib_dlsearch_path_spec='`$ECHO "$lt_cv_sys_lib_dlsearch_path_spec" | $SED "$delay_single_quote_subst"`'
+configure_time_dlsearch_path='`$ECHO "$configure_time_dlsearch_path" | $SED "$delay_single_quote_subst"`'
+configure_time_lt_sys_library_path='`$ECHO "$configure_time_lt_sys_library_path" | $SED "$delay_single_quote_subst"`'
 hardcode_action='`$ECHO "$hardcode_action" | $SED "$delay_single_quote_subst"`'
 enable_dlopen='`$ECHO "$enable_dlopen" | $SED "$delay_single_quote_subst"`'
 enable_dlopen_self='`$ECHO "$enable_dlopen_self" | $SED "$delay_single_quote_subst"`'
@@ -32436,7 +32491,8 @@ postinstall_cmds \
 postuninstall_cmds \
 finish_cmds \
 sys_lib_search_path_spec \
-lt_cv_sys_lib_dlsearch_path_spec \
+configure_time_dlsearch_path \
+configure_time_lt_sys_library_path \
 reload_cmds_CXX \
 old_archive_cmds_CXX \
 old_archive_from_new_cmds_CXX \
@@ -33232,7 +33288,7 @@ $as_echo X"$file" |
 available_tags='CXX '
 
 # Configured defaults for sys_lib_dlsearch_path munging.
-: \${LT_SYS_LIBRARY_PATH="$LT_SYS_LIBRARY_PATH"}
+: \${LT_SYS_LIBRARY_PATH="$configure_time_lt_sys_library_path"}
 
 # ### BEGIN LIBTOOL CONFIG
 
@@ -33483,8 +33539,11 @@ hardcode_into_libs=$hardcode_into_libs
 # Compile-time system search path for libraries.
 sys_lib_search_path_spec=$lt_sys_lib_search_path_spec
 
-# Run-time system search path for libraries.
-sys_lib_dlsearch_path_spec=$lt_lt_cv_sys_lib_dlsearch_path_spec
+# Detected run-time system search path for libraries.
+sys_lib_dlsearch_path_spec=$lt_configure_time_dlsearch_path
+
+# Explicit LT_SYS_LIBRARY_PATH set during ./configure time.
+configure_time_lt_sys_library_path=$lt_configure_time_lt_sys_library_path
 
 # Whether dlopen is supported.
 dlopen_support=$enable_dlopen
@@ -33650,9 +33709,8 @@ compiler_lib_search_path=$lt_compiler_lib_search_path
 _LT_EOF
 
     cat <<'_LT_EOF' >> "$cfgfile"
-## -------------------------------------- ##
-## Shell functions shared with configure. ##
-## -------------------------------------- ##
+
+# ### BEGIN FUNCTIONS SHARED WITH CONFIGURE
 
 # func_munge_path_list VARIABLE PATH
 # -----------------------------------
@@ -33674,7 +33732,7 @@ func_munge_path_list ()
     x)
         ;;
     *:)
-        eval @S|@1=\"`$ECHO @S|@2 | $SED 's/:/ /g'` \S|@1\"
+        eval @S|@1=\"`$ECHO @S|@2 | $SED 's/:/ /g'` \@S|@@S|@1\"
         ;;
     x:*)
         eval @S|@1=\"\@S|@@S|@1 `$ECHO @S|@2 | $SED 's/:/ /g'`\"
@@ -33704,6 +33762,8 @@ func_cc_basename ()
     func_cc_basename_result=`$ECHO "$cc_temp" | $SED "s%.*/%%; s%^$host_alias-%%"`
 }
 
+
+# ### END FUNCTIONS SHARED WITH CONFIGURE
 
 _LT_EOF
 
