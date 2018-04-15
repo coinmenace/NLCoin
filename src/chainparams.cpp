@@ -28,9 +28,9 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
     txNew.vout[0].scriptPubKey = genesisOutputScript;
 
     CBlock genesis;
-    genesis.nTime    = nTime;
+    genesis.nTime    = 1523822960;
     genesis.nBits    = nBits;
-    genesis.nNonce   = nNonce;
+    genesis.nNonce   = 0;
     genesis.nVersion = nVersion;
     genesis.vtx.push_back(txNew);
     genesis.hashPrevBlock.SetNull();
@@ -45,8 +45,8 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Proton coin will start 14 April 2018";
-    const CScript genesisOutputScript = CScript() << ParseHex("040a3ada5ba6280b99f49a92ba47221e6a72af844ec49d0c8bbdae1ec09a4c79b22e42eefe670ae04490556f91780eb57de76493d020c91d0c421c2fa052b28a2b") << OP_CHECKSIG;
+    const char* pszTimestamp = "NL coin will start 15 April 2018";
+    const CScript genesisOutputScript = CScript() << ParseHex("1234ada5ba6280b99f49a92ba47221e6a72af844ec49d0c8bbdae1ec09a4c79b22e42eefe670ae04490556f91780eb57de76493d020c91d0c421c2fa052b28a2b") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -109,8 +109,8 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x6a;
-        pchMessageStart[1] = 0xb1;
+        pchMessageStart[0] = 0x0d;
+        pchMessageStart[1] = 0xd7;
         pchMessageStart[2] = 0x9c;
         pchMessageStart[3] = 0xd5;
         vAlertPubKey = ParseHex("044513449073a8efe161dc42e7c07c61c4a8f59297dc8ebacbc2f77345084d058399022bc6a0db0719739f183d14b04893fb78c3b9bd9a3f88ecf8ea06adae99fe");
@@ -121,15 +121,22 @@ public:
         genesis = CreateGenesisBlock(1514160000, 1648566, 0x1e0ffff0, 1, 50 * COIN);
         
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000e1728b630fd83aecbc51546c7915fffb7d3c897b5fd8c4b14043070b7f0"));
-        assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
+
+        assert(consensus.hashGenesisBlock == uint256S("0x"));
+        assert(genesis.hashMerkleRoot == uint256S("0x"));
+        //assert(consensus.hashGenesisBlock == uint256S("0x00000e1728b630fd83aecbc51546c7915fffb7d3c897b5fd8c4b14043070b7f0"));
+        //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
         vSeeds.push_back(CDNSSeedData("protoncoin1", "node1.mobilipia.com"));
         vSeeds.push_back(CDNSSeedData("protoncoin2", "node2.mobilipia.com"));
+        vSeeds.push_back(CDNSSeedData("protoncoin3", "node3.mobilipia.com"));
+        //vSeeds.push_back(CDNSSeedData("protoncoin4", "seed4.protoncoin.info"));
+        vSeeds.push_back(CDNSSeedData("dnsseed", "node1.mobilipia.com"));
+        //vSeeds.push_back(CDNSSeedData("protoncoin1", "seed1.protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("protoncoin2", "seed2.protoncoin.info"));
         //vSeeds.push_back(CDNSSeedData("protoncoin3", "seed3.protoncoin.info"));
         //vSeeds.push_back(CDNSSeedData("protoncoin4", "seed4.protoncoin.info"));
-        // vSeeds.push_back(CDNSSeedData("dnsseed", "dnsseed.protoncoin.info"));
-        vSeeds.push_back(CDNSSeedData("dnsseed", "node3.mobilipia.com"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed", "dnsseed.protoncoin.info"));
 
         // Proton addresses start with 'P'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,55);
@@ -202,8 +209,10 @@ public:
         consensus.BIP34Height = 21111; // FIX
         consensus.BIP34Hash = uint256S("0x0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 60 * 60; // Proton: 1 hour
-        consensus.nPowTargetSpacing = 2 * 60; // Proton: 2 minutes
+        //consensus.nPowTargetTimespan = 60 * 60; // Proton: 1 hour
+        //consensus.nPowTargetSpacing = 2 * 60; // Proton: 2 minutes
+        consensus.nPowTargetTimespan = 2 * 60 * 60; // Proton: 2 hours
+        consensus.nPowTargetSpacing = 3 * 60; // Proton: 3 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
@@ -217,8 +226,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1502280000; // Aug 9th, 2017
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1533816000; // Aug 9th, 2018
 
-        pchMessageStart[0] = 0x70;
-        pchMessageStart[1] = 0xa7;
+        pchMessageStart[0] = 0x0e;
+        pchMessageStart[1] = 0xd8;
         pchMessageStart[2] = 0x7d;
         pchMessageStart[3] = 0xd6;
         vAlertPubKey = ParseHex("04f9e05c65b8cf20e31464d7f35504b62999f845c9242bc6b1bcd1993c643e3ca40527a13de58afa831dccdeacae82b39c01602daf3a7f4151032f5dacefa36932");
@@ -314,8 +323,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 999999999999ULL;
 
-        pchMessageStart[0] = 0x76;
-        pchMessageStart[1] = 0x9d;
+        pchMessageStart[0] = 0x0f;
+        pchMessageStart[1] = 0xd9;
         pchMessageStart[2] = 0x5e;
         pchMessageStart[3] = 0xd7;
         nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
@@ -326,7 +335,8 @@ public:
 
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x5a2bd287d108e8ae36227683cc9f47c4ed4b93a19b29684dec3b1a7189248eb4"));
-        assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
+        //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
+        assert(genesis.hashMerkleRoot == uint256S("0x"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();  //! Regtest mode doesn't have any DNS seeds.
