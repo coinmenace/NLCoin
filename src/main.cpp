@@ -4548,6 +4548,7 @@ bool InitBlockIndex(const CChainParams& chainparams)
             CBlock &block = const_cast<CBlock&>(chainparams.GenesisBlock());
 
             LogPrintf("Main P Net block %s.\n", chainparams.GetConsensus().hashGenesisBlock.GetHex());
+            LogPrintf("Main T Genesis block %s.\n", chainparams.GenesisBlock().hashMerkleRoot.GetHex());
             // Start new block file
             unsigned int nBlockSize = ::GetSerializeSize(block, SER_DISK, CLIENT_VERSION);
             CDiskBlockPos blockPos;
