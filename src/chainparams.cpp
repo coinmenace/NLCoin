@@ -238,8 +238,8 @@ public:
         genesis = CreateGenesisBlock(1513728000, 21635, 0x1e0ffff0, 1, 50 * COIN);
 
         consensus.hashGenesisBlock = genesis.GetHash();
-        //cout << consensus.hashGenesisBlock;
-        printf("%s\n",consensus.hashGenesisBlock.c_str());
+        cout << consensus.hashGenesisBlock<<"\n";
+        //printf("%s\n",consensus.hashGenesisBlock.c_str());
         assert(consensus.hashGenesisBlock == uint256S("0x0000000f350d9039575f6446584f4ae4317bed76aae26ef1f2381ff73f7cd68d"));
         assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
