@@ -124,6 +124,7 @@ public:
         
         consensus.hashGenesisBlock = genesis.GetHash();
         consensus.hashGenesisBlock  =  uint256S("0x");
+        genesis.hashMerkleRoot =   uint256S("0x");
         fprintf(stdout, "%d", consensus.hashGenesisBlock);
         assert(consensus.hashGenesisBlock == uint256S("0x"));
         assert(genesis.hashMerkleRoot == uint256S("0x"));
