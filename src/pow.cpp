@@ -255,8 +255,8 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
     // Check proof of work matches claimed amount
     if (UintToArith256(hash) > bnTarget)
         LogPrintf("POW Hash 0 block %s.\n", hash.GetHex());
-        LogPrintf("POW Hash block %s.\n", UintToArith256(hash).GetHex());
-        LogPrintf("POW Hash block %s.\n", bnTarget.GetHex());
+        LogPrintf("POW Hash block %s.\n", UintToArith256(hash).ToString());
+        LogPrintf("POW Hash block %s.\n", bnTarget.ToString());
         return error("CheckProofOfWork(): hash doesn't match nBits");
 
     return true;
