@@ -45,7 +45,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Proton coin will start 25 Dec 2017";
+    const char* pszTimestamp = "Proton coin will start 16 Apr 2018";
     const CScript genesisOutputScript = CScript() << ParseHex("040a3ada5ba6280b99f49a92ba47221e6a72af844ec49d0c8bbdae1ec09a4c79b22e42eefe670ae04490556f91780eb57de76493d020c91d0c421c2fa052b28a2b") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -114,21 +114,31 @@ public:
         pchMessageStart[2] = 0x9c;
         pchMessageStart[3] = 0xd5;
         vAlertPubKey = ParseHex("044513449073a8efe161dc42e7c07c61c4a8f59297dc8ebacbc2f77345084d058399022bc6a0db0719739f183d14b04893fb78c3b9bd9a3f88ecf8ea06adae99fe");
-        nDefaultPort = 17817;
+        nDefaultPort = 23744;
         nMaxTipAge = 1.5 * 60 * 60; // ~36 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nPruneAfterHeight = 100000;
-
-        genesis = CreateGenesisBlock(1514160000, 1648566, 0x1e0ffff0, 1, 50 * COIN);
+        uint32_t nTime = 1523867999;
+        uint32_t nNonce = 4643466;
+        uint32_t nBits = 0x1e0ffff0;//0x1e0ffff0;
+        genesis = CreateGenesisBlock(nTime,nNonce, nBits, 1, 50 * COIN);
 
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000e1728b630fd83aecbc51546c7915fffb7d3c897b5fd8c4b14043070b7f0"));
-        assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
+        LogPrintf("Main Net block %s.\n", consensus.hashGenesisBlock.GetHex());
+        LogPrintf("Main Net Merkle %s.\n", genesis.hashMerkleRoot.GetHex());
+        assert(consensus.hashGenesisBlock == uint256S("0x65da65daa52cae1f4a2621fa59ef9f41de06d798ee07b4071427600c326c4762"));
+        assert(genesis.hashMerkleRoot == uint256S("0xcb6e8acc699cce7857c20ce0572c5b8d2d370a7c3928d3b064d830b4a45cdafc"));
+        //assert(consensus.hashGenesisBlock == uint256S("0x00000e1728b630fd83aecbc51546c7915fffb7d3c897b5fd8c4b14043070b7f0"));
+        //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
-        vSeeds.push_back(CDNSSeedData("protoncoin1", "seed1.protoncoin.info"));
-        vSeeds.push_back(CDNSSeedData("protoncoin2", "seed2.protoncoin.info"));
-        vSeeds.push_back(CDNSSeedData("protoncoin3", "seed3.protoncoin.info"));
-        vSeeds.push_back(CDNSSeedData("protoncoin4", "seed4.protoncoin.info"));
-        vSeeds.push_back(CDNSSeedData("dnsseed", "dnsseed.protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("nlcoin1", "seed1.protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("nlcoin2", "seed2.protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("nlcoin3", "seed3.protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("nlcoin4", "seed4.protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed", "dnsseed.nlcoin.info"));
+        vSeeds.push_back(CDNSSeedData("protoncoin1", "node1.mobilipia.com"));
+        vSeeds.push_back(CDNSSeedData("protoncoin2", "node2.mobilipia.com"));
+        vSeeds.push_back(CDNSSeedData("protoncoin3", "node3.mobilipia.com"));
+        vSeeds.push_back(CDNSSeedData("dnsseed", "node1.mobilipia.com"));
 
         // Proton addresses start with 'P'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,55);
@@ -224,12 +234,17 @@ public:
         nDefaultPort = 17717;
         nMaxTipAge = 0x7fffffff; // allow mining on top of old blocks for testnet
         nPruneAfterHeight = 1000;
+        uint32_t nTime = 1523867999;
+        uint32_t nNonce = 215635;
+        uint32_t nBits = 0x1e0ffff0;
+        genesis = CreateGenesisBlock(nTime,nNonce, nBits, 1, 50 * COIN);
 
-        genesis = CreateGenesisBlock(1513728000, 21635, 0x1e0ffff0, 1, 50 * COIN);
 
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000000f350d9039575f6446584f4ae4317bed76aae26ef1f2381ff73f7cd68d"));
-        assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
+        LogPrintf("Test Net block %s.\n", consensus.hashGenesisBlock.GetHex());
+        LogPrintf("Test Net Merkle %s.\n", genesis.hashMerkleRoot.GetHex());
+        //assert(consensus.hashGenesisBlock == uint256S("0x0000000f350d9039575f6446584f4ae4317bed76aae26ef1f2381ff73f7cd68d"));
+        //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -320,12 +335,16 @@ public:
         nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nDefaultPort = 17617;
         nPruneAfterHeight = 1000;
-
-        genesis = CreateGenesisBlock(1513814400, 3, 0x207fffff, 1, 50 * COIN);
+        uint32_t nTime = 1513814400;
+        uint32_t nNonce = 3;
+        uint32_t nBits = 0x207fffff;
+        genesis = CreateGenesisBlock(nTime, nNonce, nBits, 1, 50 * COIN);
 
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x5a2bd287d108e8ae36227683cc9f47c4ed4b93a19b29684dec3b1a7189248eb4"));
-        assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
+        LogPrintf("Reg Net block %s.\n", consensus.hashGenesisBlock.GetHex());
+        LogPrintf("Reg Net Merkle %s.\n", genesis.hashMerkleRoot.GetHex());
+        //assert(consensus.hashGenesisBlock == uint256S("0x5a2bd287d108e8ae36227683cc9f47c4ed4b93a19b29684dec3b1a7189248eb4"));
+        //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();  //! Regtest mode doesn't have any DNS seeds.

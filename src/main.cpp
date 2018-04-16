@@ -118,7 +118,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "ProtonCoin Signed Message:\n";
+const string strMessageMagic = "NLcoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -1698,7 +1698,7 @@ bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos, const Consensus:
     catch (const std::exception& e) {
         return error("%s: Deserialize or I/O error - %s at %s", __func__, e.what(), pos.ToString());
     }
-
+    LogPrintf("POW Hash block %s.\n", block.GetHash().GetHex());
     // Check the header
     if (!CheckProofOfWork(block.GetHash(), block.nBits, consensusParams))
         return error("ReadBlockFromDisk: Errors in block header at %s", pos.ToString());
@@ -1903,7 +1903,7 @@ void static InvalidChainFound(CBlockIndex* pindexNew)
               log(pindexNew->nChainWork.getdouble())/log(2.0), DateTimeStrFormat("%Y-%m-%d %H:%M:%S",
                                                                                  pindexNew->GetBlockTime()));
     CBlockIndex *tip = chainActive.Tip();
-    printf("Tip = %s\n", chainActive.Tip());
+    printf("Tip = %s\n", chainActive.Tip()->ToString());
     assert (tip);
     LogPrintf("%s:  current best=%s  height=%d  log2_work=%.8g  date=%s\n", __func__,
               tip->GetBlockHash().ToString(), chainActive.Height(), log(tip->nChainWork.getdouble())/log(2.0),
@@ -4546,6 +4546,9 @@ bool InitBlockIndex(const CChainParams& chainparams)
     if (!fReindex) {
         try {
             CBlock &block = const_cast<CBlock&>(chainparams.GenesisBlock());
+
+            LogPrintf("Main P Net block %s.\n", chainparams.GetConsensus().hashGenesisBlock.GetHex());
+            LogPrintf("Main T Genesis block %s.\n", chainparams.GenesisBlock().hashMerkleRoot.GetHex());
             // Start new block file
             unsigned int nBlockSize = ::GetSerializeSize(block, SER_DISK, CLIENT_VERSION);
             CDiskBlockPos blockPos;
