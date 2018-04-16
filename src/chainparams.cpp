@@ -45,7 +45,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-        const char* pszTimestamp = "Proton coin will start 25 Dec 2017";
+        const char* pszTimestamp = "Proton coin will start 16 Apr 2018";
         const CScript genesisOutputScript = CScript() << ParseHex("040a3ada5ba6280b99f49a92ba47221e6a72af844ec49d0c8bbdae1ec09a4c79b22e42eefe670ae04490556f91780eb57de76493d020c91d0c421c2fa052b28a2b") << OP_CHECKSIG;
         return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -117,8 +117,9 @@ public:
             nDefaultPort = 23744;
             nMaxTipAge = 1.5 * 60 * 60; // ~36 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
             nPruneAfterHeight = 100000;
-
-            genesis = CreateGenesisBlock(1514160000, 1648566, 0x1e0ffff0, 1, 50 * COIN);
+            uint32_t nTime = 1523867999;
+            uint32_t nNonce = 4643466;
+            genesis = CreateGenesisBlock(nTime,nNonce, 0x1e0ffff0, 1, 50 * COIN);
 
             consensus.hashGenesisBlock = genesis.GetHash();
             assert(consensus.hashGenesisBlock == uint256S("0x00000e1728b630fd83aecbc51546c7915fffb7d3c897b5fd8c4b14043070b7f0"));
@@ -228,8 +229,10 @@ public:
             nDefaultPort = 17717;
             nMaxTipAge = 0x7fffffff; // allow mining on top of old blocks for testnet
             nPruneAfterHeight = 1000;
+            uint32_t nTime = 1523867999;
+            uint32_t nNonce = 215635;
+            genesis = CreateGenesisBlock(nTime,nNonce, 0x1e0ffff0, 1, 50 * COIN);
 
-            genesis = CreateGenesisBlock(1513728000, 21635, 0x1e0ffff0, 1, 50 * COIN);
 
             consensus.hashGenesisBlock = genesis.GetHash();
             assert(consensus.hashGenesisBlock == uint256S("0x0000000f350d9039575f6446584f4ae4317bed76aae26ef1f2381ff73f7cd68d"));
