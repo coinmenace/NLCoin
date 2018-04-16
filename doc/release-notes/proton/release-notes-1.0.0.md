@@ -3,11 +3,11 @@
 
 Proton Core version 1.0.0 is now available from:
 
-  https://protoncoin.io/downloads
+  https://nlcoin.io/downloads
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/protoncoin/proton/issues
+  https://github.com/nlcoin/proton/issues
 
 
 How to Upgrade
@@ -32,6 +32,6 @@ Credits
 
 Thanks to who contributed to this release, at least:
 
-protoncoingroup
+nlcoingroup
 
 As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/proton/).

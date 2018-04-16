@@ -72,7 +72,7 @@
 #include <shlobj.h>
 #endif
 
-#ifdef HAVE_SYS_PRCTL_H
+#ifdef HAVE_SYS_NLTCTL_H
 #include <sys/prctl.h>
 #endif
 

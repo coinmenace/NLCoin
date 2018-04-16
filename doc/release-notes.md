@@ -1,6 +1,6 @@
 Proton Core version 2.0.0 is now available from:
 
-  <https://protoncoin.io>
+  <https://nlcoin.io>
 
 
 

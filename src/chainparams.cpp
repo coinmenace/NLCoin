@@ -114,7 +114,7 @@ public:
             pchMessageStart[2] = 0x9c;
             pchMessageStart[3] = 0xd5;
             vAlertPubKey = ParseHex("044513449073a8efe161dc42e7c07c61c4a8f59297dc8ebacbc2f77345084d058399022bc6a0db0719739f183d14b04893fb78c3b9bd9a3f88ecf8ea06adae99fe");
-            nDefaultPort = 17817;
+            nDefaultPort = 23744;
             nMaxTipAge = 1.5 * 60 * 60; // ~36 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
             nPruneAfterHeight = 100000;
 
@@ -124,11 +124,11 @@ public:
             assert(consensus.hashGenesisBlock == uint256S("0x00000e1728b630fd83aecbc51546c7915fffb7d3c897b5fd8c4b14043070b7f0"));
             assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
-            vSeeds.push_back(CDNSSeedData("protoncoin1", "seed1.protoncoin.info"));
-            vSeeds.push_back(CDNSSeedData("protoncoin2", "seed2.protoncoin.info"));
-            vSeeds.push_back(CDNSSeedData("protoncoin3", "seed3.protoncoin.info"));
-            vSeeds.push_back(CDNSSeedData("protoncoin4", "seed4.protoncoin.info"));
-            vSeeds.push_back(CDNSSeedData("dnsseed", "dnsseed.protoncoin.info"));
+            vSeeds.push_back(CDNSSeedData("nlcoin1", "seed1.protoncoin.info"));
+            vSeeds.push_back(CDNSSeedData("nlcoin2", "seed2.protoncoin.info"));
+            vSeeds.push_back(CDNSSeedData("nlcoin3", "seed3.protoncoin.info"));
+            vSeeds.push_back(CDNSSeedData("nlcoin4", "seed4.protoncoin.info"));
+            vSeeds.push_back(CDNSSeedData("dnsseed", "dnsseed.nlcoin.info"));
 
             // Proton addresses start with 'P'
             base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,55);

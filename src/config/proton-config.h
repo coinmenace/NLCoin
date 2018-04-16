@@ -275,7 +275,7 @@
 /* #undef HAVE_SYS_ENDIAN_H */
 
 /* Define to 1 if you have the <sys/prctl.h> header file. */
-/* #undef HAVE_SYS_PRCTL_H */
+/* #undef HAVE_SYS_NLTCTL_H */
 
 /* Define to 1 if you have the <sys/select.h> header file. */
 /* #undef HAVE_SYS_SELECT_H */
@@ -302,7 +302,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/protoncoin/protoncoin/issues"
+#define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Proton Core"
