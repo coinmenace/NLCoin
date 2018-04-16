@@ -124,6 +124,7 @@ public:
             consensus.hashGenesisBlock = genesis.GetHash();
             LogPrintf("Main Net block %s.\n", consensus.hashGenesisBlock.GetHex());
             LogPrintf("Main Net Merkle %s.\n", genesis.hashMerkleRoot.GetHex());
+            assert(consensus.hashGenesisBlock == uint256S("0x65da65daa52cae1f4a2621fa59ef9f41de06d798ee07b4071427600c326c4762"));
             //assert(consensus.hashGenesisBlock == uint256S("0x00000e1728b630fd83aecbc51546c7915fffb7d3c897b5fd8c4b14043070b7f0"));
             //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
