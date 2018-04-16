@@ -122,6 +122,8 @@ public:
             genesis = CreateGenesisBlock(nTime,nNonce, 0x1e0ffff0, 1, 50 * COIN);
 
             consensus.hashGenesisBlock = genesis.GetHash();
+            LogPrintf("Main Net block %s.\n", consensus.hashGenesisBlock.GetHex());
+            LogPrintf("Main Net Merkle %s.\n", genesis.hashMerkleRoot.GetHex());
             //assert(consensus.hashGenesisBlock == uint256S("0x00000e1728b630fd83aecbc51546c7915fffb7d3c897b5fd8c4b14043070b7f0"));
             //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
@@ -235,6 +237,8 @@ public:
 
 
             consensus.hashGenesisBlock = genesis.GetHash();
+            LogPrintf("Test Net block %s.\n", consensus.hashGenesisBlock.GetHex());
+            LogPrintf("Test Net Merkle %s.\n", genesis.hashMerkleRoot.GetHex());
             //assert(consensus.hashGenesisBlock == uint256S("0x0000000f350d9039575f6446584f4ae4317bed76aae26ef1f2381ff73f7cd68d"));
             //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
@@ -331,6 +335,8 @@ public:
             genesis = CreateGenesisBlock(1513814400, 3, 0x207fffff, 1, 50 * COIN);
 
             consensus.hashGenesisBlock = genesis.GetHash();
+            LogPrintf("Reg Net block %s.\n", consensus.hashGenesisBlock.GetHex());
+            LogPrintf("Reg Net Merkle %s.\n", genesis.hashMerkleRoot.GetHex());
             //assert(consensus.hashGenesisBlock == uint256S("0x5a2bd287d108e8ae36227683cc9f47c4ed4b93a19b29684dec3b1a7189248eb4"));
             //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
