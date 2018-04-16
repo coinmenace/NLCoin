@@ -119,7 +119,8 @@ public:
             nPruneAfterHeight = 100000;
             uint32_t nTime = 1523867999;
             uint32_t nNonce = 4643466;
-            genesis = CreateGenesisBlock(nTime,nNonce, 0x1e0ffff0, 1, 50 * COIN);
+            uint32_t nBits = 0x65da65daa52cae1f4a2621fa59ef9f41de06d798ee07b4071427600c326c4762;//0x1e0ffff0;
+            genesis = CreateGenesisBlock(nTime,nNonce, nBits, 1, 50 * COIN);
 
             consensus.hashGenesisBlock = genesis.GetHash();
             LogPrintf("Main Net block %s.\n", consensus.hashGenesisBlock.GetHex());
@@ -235,7 +236,8 @@ public:
             nPruneAfterHeight = 1000;
             uint32_t nTime = 1523867999;
             uint32_t nNonce = 215635;
-            genesis = CreateGenesisBlock(nTime,nNonce, 0x1e0ffff0, 1, 50 * COIN);
+            uint32_t nBits = 0x1e0ffff0;
+            genesis = CreateGenesisBlock(nTime,nNonce, nBits, 1, 50 * COIN);
 
 
             consensus.hashGenesisBlock = genesis.GetHash();
@@ -333,8 +335,10 @@ public:
             nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
             nDefaultPort = 17617;
             nPruneAfterHeight = 1000;
-
-            genesis = CreateGenesisBlock(1513814400, 3, 0x207fffff, 1, 50 * COIN);
+            uint32_t nTime = 1513814400;
+            uint32_t nNonce = 3;
+            uint32_t nBits = 0x207fffff;
+            genesis = CreateGenesisBlock(nTime, nNonce, nBits, 1, 50 * COIN);
 
             consensus.hashGenesisBlock = genesis.GetHash();
             LogPrintf("Reg Net block %s.\n", consensus.hashGenesisBlock.GetHex());
