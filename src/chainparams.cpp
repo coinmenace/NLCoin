@@ -117,7 +117,7 @@ public:
             nDefaultPort = 23744;
             nMaxTipAge = 1.5 * 60 * 60; // ~36 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
             nPruneAfterHeight = 100000;
-            uint32_t nTime = 1514160000; //1523867999;
+            uint32_t nTime = 1523867999;
             uint32_t nNonce = 4643466;
             uint32_t nBits = 0x1e0ffff0;//0x1e0ffff0;
             genesis = CreateGenesisBlock(nTime,nNonce, nBits, 1, 50 * COIN);
