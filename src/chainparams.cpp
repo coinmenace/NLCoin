@@ -85,7 +85,7 @@ public:
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
         consensus.nPowTargetTimespan = 2 * 2 * 60; // Proton: 1 hour, 2 blocks
-        consensus.nPowTargetSpacing = 2 * 60; // Proton: 2 minutes
+        consensus.nPowTargetSpacing = 1 * 60; // Proton: 1 minutes
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
