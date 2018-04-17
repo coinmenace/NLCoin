@@ -135,10 +135,10 @@ public:
         //vSeeds.push_back(CDNSSeedData("nlcoin3", "seed3.protoncoin.info"));
         //vSeeds.push_back(CDNSSeedData("nlcoin4", "seed4.protoncoin.info"));
         //vSeeds.push_back(CDNSSeedData("dnsseed", "dnsseed.nlcoin.info"));
-        vSeeds.push_back(CDNSSeedData("protoncoin1", "node1.mobilipia.com"));
-        vSeeds.push_back(CDNSSeedData("protoncoin2", "node2.mobilipia.com"));
-        vSeeds.push_back(CDNSSeedData("protoncoin3", "node3.mobilipia.com"));
-        vSeeds.push_back(CDNSSeedData("dnsseed", "node1.mobilipia.com"));
+        vSeeds.push_back(CDNSSeedData("reef1", "159.89.90.181"));
+        vSeeds.push_back(CDNSSeedData("reef1", "138.68.91.38"));
+        //vSeeds.push_back(CDNSSeedData("protoncoin3", "node3.mobilipia.com"));
+        vSeeds.push_back(CDNSSeedData("dnsseed", "159.89.90.181"));
 
         // Proton addresses start with 'P'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,55);
