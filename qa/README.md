@@ -31,9 +31,9 @@ Possible options:
 
 ```
   -h, --help            show this help message and exit
-  --nocleanup           Leave protonds and test.* datadir on exit or error
-  --noshutdown          Don't stop protonds after the test execution
-  --srcdir=SRCDIR       Source directory containing protond/proton-cli
+  --nocleanup           Leave Protonds and test.* datadir on exit or error
+  --noshutdown          Don't stop Protonds after the test execution
+  --srcdir=SRCDIR       Source directory containing Protond/Proton-cli
                         (default: ../../src)
   --tmpdir=TMPDIR       Root directory for datadirs
   --tracerpc            Print out all RPC calls as they are made
@@ -47,7 +47,7 @@ output (example: `PYTHON_DEBUG=1 qa/pull-tester/rpc-tests.py wallet`).
 A 200-block -regtest blockchain and wallets for four nodes
 is created the first time a regression test is run and
 is stored in the cache/ directory. Each node has 25 mature
-blocks (25*500=12500 PROTON) in its wallet.
+blocks (25*500=12500 Proton) in its wallet.
 
 After the first run, the cache/ blockchain and wallets are
 copied into a temporary directory and used as the initial
@@ -58,7 +58,7 @@ to recover with:
 
 ```bash
 rm -rf cache
-killall protond
+killall Protond
 ```
 
 Writing tests

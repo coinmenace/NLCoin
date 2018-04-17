@@ -79,9 +79,9 @@ static int AppInitRPC(int argc, char* argv[])
         std::string strUsage = _("Proton Core RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  proton-cli [options] <command> [params]  " + _("Send command to Proton Core") + "\n" +
-                  "  proton-cli [options] help                " + _("List commands") + "\n" +
-                  "  proton-cli [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  Proton-cli [options] <command> [params]  " + _("Send command to Proton Core") + "\n" +
+                  "  Proton-cli [options] help                " + _("List commands") + "\n" +
+                  "  Proton-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }

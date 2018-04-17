@@ -1,9 +1,9 @@
 # Linearize
 Construct a linear, no-fork, best version of the blockchain.
 
-## Step 0: Install proton_hash
+## Step 0: Install Proton_hash
 
-https://github.com/nlcoin/proton_hash
+https://github.com/nlcoin/Proton_hash
 
 ## Step 1: Download hash list
 

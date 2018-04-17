@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between proton-cli and protond)
+ * CBaseChainParams defines the base parameters (shared between Proton-cli and Protond)
  * of a given instance of the Proton system.
  */
 class CBaseChainParams

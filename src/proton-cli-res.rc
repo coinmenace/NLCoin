@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Proton"
-            VALUE "FileDescription",    "proton-cli (JSON-RPC client for Proton Core)"
+            VALUE "FileDescription",    "Proton-cli (JSON-RPC client for Proton Core)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "proton-cli"
+            VALUE "InternalName",       "Proton-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "proton-cli.exe"
-            VALUE "ProductName",        "proton-cli"
+            VALUE "OriginalFilename",   "Proton-cli.exe"
+            VALUE "ProductName",        "Proton-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

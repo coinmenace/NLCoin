@@ -172,8 +172,8 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PROTON&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete vašu peňaženku a stratíte prístupové heslo, potom &lt;b&gt;prídete o všetky svoje PROTON-y&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Proton&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete vašu peňaženku a stratíte prístupové heslo, potom &lt;b&gt;prídete o všetky svoje Proton-y&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -266,7 +266,7 @@
         <translation>&amp;Prijať</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and proton: URIs)</source>
+        <source>Request payments (generates QR codes and Proton: URIs)</source>
         <translation>Vyžiadať platby (vygeneruje QR kódy a Proton: URI)</translation>
     </message>
     <message>
@@ -446,8 +446,8 @@
         <translation>Otvoriť &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a proton: URI or payment request</source>
-        <translation>Otvoriť proton: URI alebo žiadosť o platbu </translation>
+        <source>Open a Proton: URI or payment request</source>
+        <translation>Otvoriť Proton: URI alebo žiadosť o platbu </translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -901,28 +901,28 @@
         <translation>Prosím vyberte úroveň súkromia.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 PROTON</source>
-        <translation>Použiť 2 rozdielne masternode pre fixovanie prostriedkov až do 1000 PROTON</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 Proton</source>
+        <translation>Použiť 2 rozdielne masternode pre fixovanie prostriedkov až do 1000 Proton</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 PROTON</source>
-        <translation>Použiť 8 rozdielnych masternode pre fixovanie prostriedkov až do 1000 PROTON</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 Proton</source>
+        <translation>Použiť 8 rozdielnych masternode pre fixovanie prostriedkov až do 1000 Proton</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použiť 16 rozdielnych masternode</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PROTON to anonymize 1000 PROTON</source>
-        <translation>Táto možnosť je najrýchlejšia a bude stáť približne 0.025 PROTON pre anonimizáciu 1000 PROTON</translation>
+        <source>This option is the quickest and will cost about ~0.025 Proton to anonymize 1000 Proton</source>
+        <translation>Táto možnosť je najrýchlejšia a bude stáť približne 0.025 Proton pre anonimizáciu 1000 Proton</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PROTON to anonymize 1000 PROTON</source>
-        <translation>Táto možnosť je stredne rýchla bude stáť približne 0.05 PROTON pre anonimizáciu 1000 PROTON</translation>
+        <source>This option is moderately fast and will cost about 0.05 Proton to anonymize 1000 Proton</source>
+        <translation>Táto možnosť je stredne rýchla bude stáť približne 0.05 Proton pre anonimizáciu 1000 Proton</translation>
     </message>
     <message>
-        <source>0.1 PROTON per 1000 PROTON you anonymize.</source>
-        <translation>0.1 PROTON za 1000 PROTON ktoré spravíte anonymnými.</translation>
+        <source>0.1 Proton per 1000 Proton you anonymize.</source>
+        <translation>0.1 Proton za 1000 Proton ktoré spravíte anonymnými.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1347,9 +1347,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/proton/</source>
+https://www.transifex.com/projects/p/Proton/</source>
         <translation>Chýbajúci alebo nekompletný preklad? Pomôžte nám tu:
-https://www.transifex.com/projects/p/proton/</translation>
+https://www.transifex.com/projects/p/Proton/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1523,8 +1523,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Čiastka a kolá:</translation>
     </message>
     <message>
-        <source>0 PROTON / 0 Rounds</source>
-        <translation>0 PROTON / 0 Kôl</translation>
+        <source>0 Proton / 0 Rounds</source>
+        <translation>0 Proton / 0 Kôl</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -1653,7 +1653,7 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-        <source>Cannot start proton: click-to-pay handler</source>
+        <source>Cannot start Proton: click-to-pay handler</source>
         <translation>Proton sa nedá spustiť: click-to-pay handler</translation>
     </message>
     <message>
@@ -2365,7 +2365,7 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Ak je vlastný poplatok nastavený na 1000 duffov a transakcia je len 250 bytov, v tom prípade "za kilobajt" zaplatí iba 250 duffov na poplatkoch, &lt;br /&gt;zatiaľ čo "celkovo pri najmenšom" zaplatí 1000 duffov. Pre transakcie väčšie ako jeden kilobajt, obe zaplatia rovnako za kilobajt. </translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for proton transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Proton transactions than the network can process.</source>
         <translation>Platenie minimálneho poplatku je v poriadku pokiaľ je objem transakcií menší ako je miesto v bloku. &lt;br /&gt;Buďte opatrný pretože to môže skončiť s nikdy nepotvrdenými transakciami, akonáhle je dopyt po Proton transakciách väčší ako dokáže sieť Proton spracovať.</translation>
     </message>
     <message>
@@ -2604,8 +2604,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Správa:</translation>
     </message>
     <message>
-        <source>A message that was attached to the proton: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Proton network.</source>
-        <translation>Správa ktorá bola pripojená ku proton: URI ktorá sa uchová spolu s transakciou pre Vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť Proton.</translation>
+        <source>A message that was attached to the Proton: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Proton network.</source>
+        <translation>Správa ktorá bola pripojená ku Proton: URI ktorá sa uchová spolu s transakciou pre Vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť Proton.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3281,8 +3281,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Poslať Mince</translation>
     </message>
     <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 PROTON.</source>
-        <translation>InstantSend zatiaľ nepodporuje posielanie takto vysokých čiastok. Transakcie sú limitované na %1 PROTON.</translation>
+        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 Proton.</source>
+        <translation>InstantSend zatiaľ nepodporuje posielanie takto vysokých čiastok. Transakcie sú limitované na %1 Proton.</translation>
     </message>
     </context>
 <context>
@@ -3325,7 +3325,7 @@ https://www.transifex.com/projects/p/proton/</translation>
     </message>
 </context>
 <context>
-    <name>proton-core</name>
+    <name>Proton-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Spojiť s danou adresou a vždy na nej počúvať. Použite zápis [host]:port pre IPv6</translation>
@@ -3587,8 +3587,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Tento produkt obsahuje softvér vyvinutý projektom OpenSSL pre použitie sady nástrojov OpenSSL &lt;https://www.openssl.org/&gt; a kryptografického softvéru napísaného Eric Young a UPnP softvér napísaný Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 PROTON.</source>
-        <translation>Nenašiel sa dostatok prostriedkov pre túto transakciu, ktorú nie sú rovné 1000 PROTON.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 Proton.</source>
+        <translation>Nenašiel sa dostatok prostriedkov pre túto transakciu, ktorú nie sú rovné 1000 Proton.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3939,8 +3939,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Kľúč KeePassHttp pre šifrovanú AES komunikáciu s KeePass</translation>
     </message>
     <message>
-        <source>Keep N PROTON anonymized (default: %u)</source>
-        <translation>Udržiavať N PROTON anonymizovaných (predvolené: %u)</translation>
+        <source>Keep N Proton anonymized (default: %u)</source>
+        <translation>Udržiavať N Proton anonymizovaných (predvolené: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -3971,8 +3971,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Poplatky (v %s/kB) menšie ako toto, sú považované za nulový transakčný poplatok (predvolené: %s)</translation>
     </message>
     <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 PROTON.</source>
-        <translation>InstantSend zatiaľ nepodporuje posielanie takto vysokých čiastok. Transakcie sú limitované na %1 PROTON.</translation>
+        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 Proton.</source>
+        <translation>InstantSend zatiaľ nepodporuje posielanie takto vysokých čiastok. Transakcie sú limitované na %1 Proton.</translation>
     </message>
     <message>
         <source>InstantSend requires inputs with at least %d confirmations, you might need to wait a few minutes and try again.</source>
@@ -3999,8 +3999,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Nedá sa nájsť dostatok denominácií PrivateSend pre túto transakciu. </translation>
     </message>
     <message>
-        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 PROTON.</source>
-        <translation>Nedá sa nájsť dostatok ne-denominovaných PrivateSend zdrojov pre túto transakciu, ktoré nie sú rovné 1000 PROTON.</translation>
+        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 Proton.</source>
+        <translation>Nedá sa nájsť dostatok ne-denominovaných PrivateSend zdrojov pre túto transakciu, ktoré nie sú rovné 1000 Proton.</translation>
     </message>
     <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>

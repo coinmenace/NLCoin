@@ -134,8 +134,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no proton: URI
-    if(!uri.isValid() || uri.scheme() != QString("proton"))
+    // return if URI is not valid or is no Proton: URI
+    if(!uri.isValid() || uri.scheme() != QString("Proton"))
         return false;
 
     SendCoinsRecipient rv;
@@ -184,7 +184,7 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!BitcoinUnits::parse(BitcoinUnits::PROTON, i->second, &rv.amount))
+                if(!BitcoinUnits::parse(BitcoinUnits::Proton, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -204,13 +204,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert proton:// to proton:
+    // Convert Proton:// to Proton:
     //
-    //    Cannot handle this later, because proton:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because Proton:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("proton://", Qt::CaseInsensitive))
+    if(uri.startsWith("Proton://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 7, "proton:");
+        uri.replace(0, 7, "Proton:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -218,12 +218,12 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("proton:%1").arg(info.address);
+    QString ret = QString("Proton:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::PROTON, info.amount, false, BitcoinUnits::separatorNever));
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::Proton, info.amount, false, BitcoinUnits::separatorNever));
         paramCount++;
     }
 
@@ -430,7 +430,7 @@ void openConfigfile()
 {
     boost::filesystem::path pathConfig = GetConfigFile();
 
-    /* Open proton.conf with the associated application */
+    /* Open Proton.conf with the associated application */
     if (boost::filesystem::exists(pathConfig))
         QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
 }
@@ -739,8 +739,8 @@ boost::filesystem::path static GetAutostartFilePath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "proton.desktop";
-    return GetAutostartDir() / strprintf("proton-%s.lnk", chain);
+        return GetAutostartDir() / "Proton.desktop";
+    return GetAutostartDir() / strprintf("Proton-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -779,7 +779,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
         std::string chain = ChainNameFromCommandLine();
-        // Write a proton.desktop file to the autostart directory:
+        // Write a Proton.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)

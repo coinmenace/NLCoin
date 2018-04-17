@@ -130,14 +130,14 @@ public:
         //assert(consensus.hashGenesisBlock == uint256S("0x00000e1728b630fd83aecbc51546c7915fffb7d3c897b5fd8c4b14043070b7f0"));
         //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
-        //vSeeds.push_back(CDNSSeedData("nlcoin1", "seed1.protoncoin.info"));
-        //vSeeds.push_back(CDNSSeedData("nlcoin2", "seed2.protoncoin.info"));
-        //vSeeds.push_back(CDNSSeedData("nlcoin3", "seed3.protoncoin.info"));
-        //vSeeds.push_back(CDNSSeedData("nlcoin4", "seed4.protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("nlcoin1", "seed1.Protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("nlcoin2", "seed2.Protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("nlcoin3", "seed3.Protoncoin.info"));
+        //vSeeds.push_back(CDNSSeedData("nlcoin4", "seed4.Protoncoin.info"));
         //vSeeds.push_back(CDNSSeedData("dnsseed", "dnsseed.nlcoin.info"));
-        vSeeds.push_back(CDNSSeedData("reef1", "159.89.90.181"));
-        vSeeds.push_back(CDNSSeedData("reef1", "138.68.91.38"));
-        //vSeeds.push_back(CDNSSeedData("protoncoin3", "node3.mobilipia.com"));
+        vSeeds.push_back(CDNSSeedData("Proton1", "159.89.90.181"));
+        vSeeds.push_back(CDNSSeedData("Proton1", "138.68.91.38"));
+        //vSeeds.push_back(CDNSSeedData("Protoncoin3", "node3.mobilipia.com"));
         vSeeds.push_back(CDNSSeedData("dnsseed", "159.89.90.181"));
 
         // Proton addresses start with 'P'

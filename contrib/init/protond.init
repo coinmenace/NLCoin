@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  protond The Proton Core server.
+#  Protond The Proton Core server.
 #
 #
 # chkconfig: 345 80 20
-# description: protond
-# processname: protond
+# description: Protond
+# processname: Protond
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/protond, see below
-if [ -f /etc/sysconfig/protond ]; then
-        . /etc/sysconfig/protond
+# you can override defaults in /etc/sysconfig/Protond, see below
+if [ -f /etc/sysconfig/Protond ]; then
+        . /etc/sysconfig/Protond
 fi
 
 RETVAL=0
 
-prog=protond
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/protond
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/protond}
+prog=Protond
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/Protond
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/Protond}
 
-# protond defaults to /usr/bin/protond, override with BITCOIND_BIN
-protond=${BITCOIND_BIN-/usr/bin/protond}
+# Protond defaults to /usr/bin/Protond, override with BITCOIND_BIN
+Protond=${BITCOIND_BIN-/usr/bin/Protond}
 
-# protond opts default to -disablewallet, override with BITCOIND_OPTS
-protond_opts=${BITCOIND_OPTS--disablewallet}
+# Protond opts default to -disablewallet, override with BITCOIND_OPTS
+Protond_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $protond $protond_opts
+    daemon $DAEMONOPTS $Protond $Protond_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

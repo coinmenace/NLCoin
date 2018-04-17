@@ -16,7 +16,7 @@ Unpack the files into a directory and run:
 
 ### Windows
 
-Unpack the files into a directory, and then run proton-qt.exe.
+Unpack the files into a directory, and then run Proton-qt.exe.
 
 ### OS X
 
@@ -26,8 +26,8 @@ Drag Proton-Qt to your applications folder, and then run Proton-Qt.
 
 * See the [Proton documentation](https://nlcoin.atlassian.net/wiki/display/DOC)
 for help and more information.
-* Ask for help on [#nlcoin](http://webchat.freenode.net?channels=protoncoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=protoncoin).
-* Ask for help on the [ProtonTalk](https://protontalk.org/) forums.
+* Ask for help on [#nlcoin](http://webchat.freenode.net?channels=Protoncoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=Protoncoin).
+* Ask for help on the [ProtonTalk](https://Protontalk.org/) forums.
 
 Building
 ---------------------
@@ -57,8 +57,8 @@ The Proton Core repo's [root README](/README.md) contains relevant information o
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [ProtonTalk](https://protontalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#nlcoin](http://webchat.freenode.net/?channels=protoncoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=protoncoin).
+* Discuss on the [ProtonTalk](https://Protontalk.org/) forums, in the Development & Technical Discussion board.
+* Discuss on [#nlcoin](http://webchat.freenode.net/?channels=Protoncoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=Protoncoin).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

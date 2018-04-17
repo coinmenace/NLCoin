@@ -18,7 +18,7 @@ OpenURIDialog::OpenURIDialog(QWidget *parent) :
 {
     ui->setupUi(this);
 #if QT_VERSION >= 0x040700
-    ui->uriEdit->setPlaceholderText("proton:");
+    ui->uriEdit->setPlaceholderText("Proton:");
 #endif
 }
 
@@ -50,5 +50,5 @@ void OpenURIDialog::on_selectFileButton_clicked()
     if(filename.isEmpty())
         return;
     QUrl fileUri = QUrl::fromLocalFile(filename);
-    ui->uriEdit->setText("proton:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+    ui->uriEdit->setText("Proton:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
 }

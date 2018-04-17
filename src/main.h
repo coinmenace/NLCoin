@@ -9,7 +9,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/proton-config.h"
+#include "config/Proton-config.h"
 #endif
 
 #include "amount.h"

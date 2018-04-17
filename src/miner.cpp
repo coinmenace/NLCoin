@@ -398,7 +398,7 @@ void static BitcoinMiner(const CChainParams& chainparams)
 {
     LogPrintf("ProtonMiner -- started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("proton-miner");
+    RenameThread("Proton-miner");
 
     unsigned int nExtraNonce = 0;
 

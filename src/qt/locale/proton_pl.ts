@@ -176,8 +176,8 @@
         <translation>Potwierdź szyfrowanie portfela</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PROTON&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeśli zaszyfrujesz swój portfel i zgubisz swoje hasło, &lt;b&gt;STRACISZ WSZYSTKIE MONETY PROTON&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Proton&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeśli zaszyfrujesz swój portfel i zgubisz swoje hasło, &lt;b&gt;STRACISZ WSZYSTKIE MONETY Proton&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,7 +188,7 @@
         <translation>Portfel zaszyfrowany</translation>
     </message>
     <message>
-        <source>Proton will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your protons from being stolen by malware infecting your computer.</source>
+        <source>Proton will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Protons from being stolen by malware infecting your computer.</source>
         <translation>Proton zostanie teraz zamknięty aby zakończyć proces szyfrowania. Pamiętaj, że zaszyfrowanie portfela nie gwarantuje pełnej ochrony przed kradzieżą twoich monet przez złośliwe oprogramowanie.</translation>
     </message>
     <message>
@@ -263,8 +263,8 @@
         <translation>Odbie&amp;rz</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and proton: URIs)</source>
-        <translation>Poproś o płatności (generuje kod QR oraz proton: link)</translation>
+        <source>Request payments (generates QR codes and Proton: URIs)</source>
+        <translation>Poproś o płatności (generuje kod QR oraz Proton: link)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -443,8 +443,8 @@
         <translation>Otwórz URI...</translation>
     </message>
     <message>
-        <source>Open a proton: URI or payment request</source>
-        <translation>Otwórz proton: Link lub żądanie zapłaty</translation>
+        <source>Open a Proton: URI or payment request</source>
+        <translation>Otwórz Proton: Link lub żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -864,28 +864,28 @@ Adres: %4
         <translation>Proszę wybrać poziom bezpieczeństwa.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 PROTON</source>
-        <translation>Użyj 2 oddzielnych masternodów aby wymieszać środki max. do 1000 PROTON</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 Proton</source>
+        <translation>Użyj 2 oddzielnych masternodów aby wymieszać środki max. do 1000 Proton</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 PROTON</source>
-        <translation>Użyj 8 oddzielnych masternodów aby wymieszać środki max. do 1000 PROTON</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 Proton</source>
+        <translation>Użyj 8 oddzielnych masternodów aby wymieszać środki max. do 1000 Proton</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Użyj 16 oddzielnych masternodów</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PROTON to anonymize 1000 PROTON</source>
-        <translation>Ta opcja jest najszybsza i kosztuje około 0.025 PROTON za zanonimizowanie 1000 PROTON</translation>
+        <source>This option is the quickest and will cost about ~0.025 Proton to anonymize 1000 Proton</source>
+        <translation>Ta opcja jest najszybsza i kosztuje około 0.025 Proton za zanonimizowanie 1000 Proton</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PROTON to anonymize 1000 PROTON</source>
-        <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 PROTON za zanonimizowanie 1000 PROTON</translation>
+        <source>This option is moderately fast and will cost about 0.05 Proton to anonymize 1000 Proton</source>
+        <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 Proton za zanonimizowanie 1000 Proton</translation>
     </message>
     <message>
-        <source>0.1 PROTON per 1000 PROTON you anonymize.</source>
-        <translation>0.1 PROTON za każde 1000 PROTON które zanonimizujesz.</translation>
+        <source>0.1 Proton per 1000 Proton you anonymize.</source>
+        <translation>0.1 Proton za każde 1000 Proton które zanonimizujesz.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1263,9 +1263,9 @@ Adres: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/proton/</source>
+https://www.transifex.com/projects/p/Proton/</source>
         <translation>Proton Core nie został przetłumaczony na twój język? Tłumaczenie jest niepełne lub niepoprawne? Możesz pomóc nam tłumaczyć tutaj:
-https://www.transifex.com/projects/p/proton/</translation>
+https://www.transifex.com/projects/p/Proton/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1431,8 +1431,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Ilość oraz Rundy:</translation>
     </message>
     <message>
-        <source>0 PROTON / 0 Rounds</source>
-        <translation>0 PROTON / 0 Rund</translation>
+        <source>0 Proton / 0 Rounds</source>
+        <translation>0 Proton / 0 Rund</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -1568,8 +1568,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Błąd żądania płatności</translation>
     </message>
     <message>
-        <source>Cannot start proton: click-to-pay handler</source>
-        <translation>Nie można włączyć proton: kliknij-aby-zapłacić ubsługującemu.</translation>
+        <source>Cannot start Proton: click-to-pay handler</source>
+        <translation>Nie można włączyć Proton: kliknij-aby-zapłacić ubsługującemu.</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2292,7 +2292,7 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Jeśli ręcznie ustalona opłata wynosi 1000 Duffów a sama transakcja ma tylko 250 bitów, to opłata jako "za kilobajt" wynosi tylko 250 duffów.&lt;br/&gt; Dzieje się tak dla każdej transakcji poniżej 1000 duffów. W przypadku transakcji większych niż jedn kilobajt opłata jest naliczana od kilobajta.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for proton transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Proton transactions than the network can process.</source>
         <translation>Uiszczanie minimalnej opłaty za transakcję jest ok dopóki ilość transakcji nie przekracza dostępnego miejsca w bloku. &lt;br /&gt;Jednakże, jeśli zaistnieje taka sytuacja w której wysłanych zostaje więcej transakcji niż sieć może przetworzyć, to jest możliwe, że twoja transakcja nigdy nie zostanie potwierdzona.</translation>
     </message>
     <message>
@@ -2559,8 +2559,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Wiadomość:</translation>
     </message>
     <message>
-        <source>A message that was attached to the proton: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Proton network.</source>
-        <translation>Wiadomość, która została dołączona do proton: Link, który zostanie zapisany wraz z transakcją do wglądu w przyszłości. Zauważ. że sama wiadomość nie zostanie wysłana przez sieć Darkcoina.</translation>
+        <source>A message that was attached to the Proton: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Proton network.</source>
+        <translation>Wiadomość, która została dołączona do Proton: Link, który zostanie zapisany wraz z transakcją do wglądu w przyszłości. Zauważ. że sama wiadomość nie zostanie wysłana przez sieć Darkcoina.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3276,8 +3276,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Wyślij płatność</translation>
     </message>
     <message>
-        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 PROTON.</source>
-        <translation>InstantX jescze nie może przesłać tak wysokich kwot. Obecnie transakcje są ograniczone tylko do %1 PROTON:</translation>
+        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 Proton.</source>
+        <translation>InstantX jescze nie może przesłać tak wysokich kwot. Obecnie transakcje są ograniczone tylko do %1 Proton:</translation>
     </message>
 </context>
 <context>
@@ -3320,7 +3320,7 @@ https://www.transifex.com/projects/p/proton/</translation>
     </message>
 </context>
 <context>
-    <name>proton-core</name>
+    <name>Proton-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Związany z danym adresem oraz zawsze prowadzący na nim nasłuch.  Użyj [host]:oznaczenie dla IPv6</translation>
@@ -3390,8 +3390,8 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Nie znaleziono wystarczających denominowanych środków Darksend do wykonania tej transakcji.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 PROTON.</source>
-        <translation>Nie znaleziono wystarczającej ilości nie zdenominowanych środków Darksend dla tej transakcji, które nie równają się 1000 PROTON</translation>
+        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 Proton.</source>
+        <translation>Nie znaleziono wystarczającej ilości nie zdenominowanych środków Darksend dla tej transakcji, które nie równają się 1000 Proton</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3634,12 +3634,12 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Błąd: niewspierany argument, znaleziono -socks. Ustawienie wersji SOCKS nie jest już możliwa, wspierane są tylkobramki  proxy SOCKS5.</translation>
     </message>
     <message>
-        <source>Fees (in PROTON/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Opłaty (PROTON/Kb) za retransmisje mniejsze niż ta, uważane są za równoznaczne z brakiem opłat (domyślnie: %s)</translation>
+        <source>Fees (in Proton/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Opłaty (Proton/Kb) za retransmisje mniejsze niż ta, uważane są za równoznaczne z brakiem opłat (domyślnie: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PROTON/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Opłaty (PROTON/Kb) mniejsze niż ta, są uważane są za równoznaczne z brakiem opłat za stworzenie transakcji (domyślnie: %s)</translation>
+        <source>Fees (in Proton/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Opłaty (Proton/Kb) mniejsze niż ta, są uważane są za równoznaczne z brakiem opłat za stworzenie transakcji (domyślnie: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3710,10 +3710,10 @@ https://www.transifex.com/projects/p/proton/</translation>
         <translation>Produkt ten zawiera oprogramowanie stworzone przez OpenSSL Project do użytku w OpenSSL Toolkit &lt;https://www.openssl.org/&gt;, oprogramowanie krptograficzne napisane przez Eric Young oraz oprogramowanie UPnP napisane przez Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use protond, or the -server option to proton-qt, you must set an rpcpassword in the configuration file:
+        <source>To use Protond, or the -server option to Proton-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=protonrpc
+rpcuser=Protonrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3721,10 +3721,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Proton Alert" admin@foo.com
 </source>
-        <translation>Aby używać protond, lub opcje -server w kliencie proton-qt, musisz ustawić hasło rpc w pliku konfiguracji:
+        <translation>Aby używać Protond, lub opcje -server w kliencie Proton-qt, musisz ustawić hasło rpc w pliku konfiguracji:
 %s
 Zalecane jest abyś użył te o to losowo stworzone hasło
-rpcuser=protonrpc
+rpcuser=Protonrpc
 rpcpassword=%s
 (Nie musisz pamiętać tego hasła)
 Twoje hasło NIE MOŻE być takie samo jak twój login.
@@ -3733,8 +3733,8 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
 </translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 PROTON.</source>
-        <translation>Niemożliwe jest zlokalizowanie wystarczającej ilości środków dla tej transakcji, które nie są równe 1000 PROTON.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 Proton.</source>
+        <translation>Niemożliwe jest zlokalizowanie wystarczającej ilości środków dla tej transakcji, które nie są równe 1000 Proton.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3847,8 +3847,8 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Błąd: Znaleziono niewspierany argument -tor, użyj -onion.</translation>
     </message>
     <message>
-        <source>Fee (in PROTON/kB) to add to transactions you send (default: %s)</source>
-        <translation>Opłata (PROTON/kB) do dodania do transakcji, którą chcesz wysłać (domyślnie: %s)</translation>
+        <source>Fee (in Proton/kB) to add to transactions you send (default: %s)</source>
+        <translation>Opłata (Proton/kB) do dodania do transakcji, którą chcesz wysłać (domyślnie: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4215,8 +4215,8 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Klucz KeePassHttp dla zaszyfrowanego metodą AES połączenia z KeePass</translation>
     </message>
     <message>
-        <source>Keep N PROTON anonymized (default: %u)</source>
-        <translation>Utrzymuj N zanonimizowanych proton (domyślnie: %u)</translation>
+        <source>Keep N Proton anonymized (default: %u)</source>
+        <translation>Utrzymuj N zanonimizowanych Proton (domyślnie: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>

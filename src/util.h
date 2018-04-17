@@ -13,7 +13,7 @@
 #define BITCOIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/proton-config.h"
+#include "config/Proton-config.h"
 #endif
 
 #include "compat.h"
@@ -35,8 +35,8 @@
 
 // Uncomment the following line to enable debugging messages
 // or enable on a per file basis prior to inclusion of util.h
-//#define ENABLE_PROTON_DEBUG
-#ifdef ENABLE_PROTON_DEBUG
+//#define ENABLE_Proton_DEBUG
+#ifdef ENABLE_Proton_DEBUG
 #define DBG( x ) x
 #else
 #define DBG( x ) 
@@ -249,7 +249,7 @@ std::string GetThreadName();
  */
 template <typename Callable> void TraceThread(const char* name,  Callable func)
 {
-    std::string s = strprintf("proton-%s", name);
+    std::string s = strprintf("Proton-%s", name);
     RenameThread(s.c_str());
     try
     {

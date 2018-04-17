@@ -344,18 +344,18 @@ static const CRPCCommand vRPCCommands[] =
 #endif
 
     /* Proton features */
-    { "proton",               "masternode",             &masternode,             true  },
-    { "proton",               "masternodelist",         &masternodelist,         true  },
-    { "proton",               "masternodebroadcast",    &masternodebroadcast,    true  },
-    { "proton",               "gobject",                &gobject,                true  },
-    { "proton",               "getgovernanceinfo",      &getgovernanceinfo,      true  },
-    { "proton",               "getsuperblockbudget",    &getsuperblockbudget,    true  },
-    { "proton",               "voteraw",                &voteraw,                true  },
-    { "proton",               "mnsync",                 &mnsync,                 true  },
-    { "proton",               "spork",                  &spork,                  true  },
-    { "proton",               "getpoolinfo",            &getpoolinfo,            true  },
+    { "Proton",               "masternode",             &masternode,             true  },
+    { "Proton",               "masternodelist",         &masternodelist,         true  },
+    { "Proton",               "masternodebroadcast",    &masternodebroadcast,    true  },
+    { "Proton",               "gobject",                &gobject,                true  },
+    { "Proton",               "getgovernanceinfo",      &getgovernanceinfo,      true  },
+    { "Proton",               "getsuperblockbudget",    &getsuperblockbudget,    true  },
+    { "Proton",               "voteraw",                &voteraw,                true  },
+    { "Proton",               "mnsync",                 &mnsync,                 true  },
+    { "Proton",               "spork",                  &spork,                  true  },
+    { "Proton",               "getpoolinfo",            &getpoolinfo,            true  },
 #ifdef ENABLE_WALLET
-    { "proton",               "privatesend",            &privatesend,            false },
+    { "Proton",               "privatesend",            &privatesend,            false },
 
     /* Wallet */
     { "wallet",             "keepass",                &keepass,                true },
@@ -578,7 +578,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(const std::string& methodname, const std::string& args)
 {
-    return "> proton-cli " + methodname + " " + args + "\n";
+    return "> Proton-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(const std::string& methodname, const std::string& args)

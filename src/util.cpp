@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/proton-config.h"
+#include "config/Proton-config.h"
 #endif
 
 #include "util.h"
@@ -115,8 +115,8 @@ bool fLiteMode = false;
 */
 int nWalletBackups = 10;
 
-const char * const BITCOIN_CONF_FILENAME = "proton.conf";
-const char * const BITCOIN_PID_FILENAME = "protond.pid";
+const char * const BITCOIN_CONF_FILENAME = "Proton.conf";
+const char * const BITCOIN_PID_FILENAME = "Protond.pid";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
@@ -270,8 +270,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "proton" is a composite category enabling all Proton-related debug output
-            if(ptrCategory->count(string("proton"))) {
+            // "Proton" is a composite category enabling all Proton-related debug output
+            if(ptrCategory->count(string("Proton"))) {
                 ptrCategory->insert(string("privatesend"));
                 ptrCategory->insert(string("instantsend"));
                 ptrCategory->insert(string("masternode"));
@@ -495,7 +495,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "proton";
+    const char* pszModule = "Proton";
 #endif
     if (pex)
         return strprintf(
@@ -518,7 +518,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\ProtonCore
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\ProtonCore
     // Mac: ~/Library/Application Support/ProtonCore
-    // Unix: ~/.protoncore
+    // Unix: ~/.Protoncore
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "ProtonCore";
@@ -534,7 +534,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Library/Application Support/ProtonCore";
 #else
     // Unix
-    return pathRet / ".protoncore";
+    return pathRet / ".Protoncore";
 #endif
 #endif
 }
@@ -628,7 +628,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()){
-        // Create empty proton.conf if it does not excist
+        // Create empty Proton.conf if it does not excist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -640,7 +640,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override proton.conf
+        // Don't overwrite existing settings so command line settings override Proton.conf
         string strKey = string("-") + it->string_key;
         string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);

@@ -58,9 +58,9 @@ public:
      */
     enum Unit
     {
-        PROTON,
-        mPROTON,
-        uPROTON,
+        Proton,
+        mProton,
+        uProton,
         duffs
     };
 

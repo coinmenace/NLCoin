@@ -71,7 +71,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/proton.conf are parsed in qt/proton.cpp's main()
+    // If Qt is used, parameters/Proton.conf are parsed in qt/Proton.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -86,7 +86,7 @@ bool AppInit(int argc, char* argv[])
         else
         {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  protond [options]                     " + _("Start Proton Core Daemon") + "\n";
+                  "  Protond [options]                     " + _("Start Proton Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -127,12 +127,12 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "proton:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "Proton:"))
                 fCommandLine = true;
 
         if (fCommandLine)
         {
-            fprintf(stderr, "Error: There is no RPC client functionality in protond anymore. Use the proton-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in Protond anymore. Use the Proton-cli utility instead.\n");
             exit(EXIT_FAILURE);
         }
 #ifndef WIN32
@@ -190,7 +190,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect protond signal handlers
+    // Connect Protond signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);

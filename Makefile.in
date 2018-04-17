@@ -127,7 +127,7 @@ DIST_COMMON = $(srcdir)/Makefile.am $(top_srcdir)/configure \
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
 mkinstalldirs = $(install_sh) -d
-CONFIG_HEADER = $(top_builddir)/src/config/proton-config.h
+CONFIG_HEADER = $(top_builddir)/src/config/Proton-config.h
 CONFIG_CLEAN_FILES = libbitcoinconsensus.pc share/setup.nsi \
 	share/qt/Info.plist src/test/buildenv.py \
 	qa/pull-tester/run-bitcoind-for-test.sh \
@@ -231,7 +231,7 @@ am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/qa/pull-tester/tests_config.py.in \
 	$(top_srcdir)/share/qt/Info.plist.in \
 	$(top_srcdir)/share/setup.nsi.in \
-	$(top_srcdir)/src/config/proton-config.h.in \
+	$(top_srcdir)/src/config/Proton-config.h.in \
 	$(top_srcdir)/src/test/buildenv.py.in COPYING INSTALL \
 	build-aux/compile build-aux/config.guess build-aux/config.sub \
 	build-aux/install-sh build-aux/ltmain.sh build-aux/missing
@@ -532,9 +532,9 @@ SUBDIRS = src
 GZIP_ENV = "-9n"
 @BUILD_BITCOIN_LIBS_TRUE@pkgconfigdir = $(libdir)/pkgconfig
 @BUILD_BITCOIN_LIBS_TRUE@pkgconfig_DATA = libbitcoinconsensus.pc
-BITCOIND_BIN = $(top_builddir)/src/protond$(EXEEXT)
-BITCOIN_QT_BIN = $(top_builddir)/src/qt/proton-qt$(EXEEXT)
-BITCOIN_CLI_BIN = $(top_builddir)/src/proton-cli$(EXEEXT)
+BITCOIND_BIN = $(top_builddir)/src/Protond$(EXEEXT)
+BITCOIN_QT_BIN = $(top_builddir)/src/qt/Proton-qt$(EXEEXT)
+BITCOIN_CLI_BIN = $(top_builddir)/src/Proton-cli$(EXEEXT)
 BITCOIN_WIN_INSTALLER = $(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 OSX_APP = Proton-Qt.app
 OSX_DMG = Proton-Core.dmg
@@ -561,9 +561,9 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) $
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
 COVERAGE_INFO = baseline_filtered_combined.info baseline.info block_test.info \
-  leveldb_baseline.info test_proton_filtered.info total_coverage.info \
+  leveldb_baseline.info test_Proton_filtered.info total_coverage.info \
   baseline_filtered.info block_test_filtered.info rpc_test.info rpc_test_filtered.info \
-  leveldb_baseline_filtered.info test_proton_coverage.info test_proton.info
+  leveldb_baseline_filtered.info test_Proton_coverage.info test_Proton.info
 
 OSX_APP_BUILT = $(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
@@ -611,20 +611,20 @@ $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	$(am__cd) $(srcdir) && $(ACLOCAL) $(ACLOCAL_AMFLAGS)
 $(am__aclocal_m4_deps):
 
-src/config/proton-config.h: src/config/stamp-h1
+src/config/Proton-config.h: src/config/stamp-h1
 	@test -f $@ || rm -f src/config/stamp-h1
 	@test -f $@ || $(MAKE) $(AM_MAKEFLAGS) src/config/stamp-h1
 
-src/config/stamp-h1: $(top_srcdir)/src/config/proton-config.h.in $(top_builddir)/config.status
+src/config/stamp-h1: $(top_srcdir)/src/config/Proton-config.h.in $(top_builddir)/config.status
 	@rm -f src/config/stamp-h1
-	cd $(top_builddir) && $(SHELL) ./config.status src/config/proton-config.h
-$(top_srcdir)/src/config/proton-config.h.in: @MAINTAINER_MODE_TRUE@ $(am__configure_deps) 
+	cd $(top_builddir) && $(SHELL) ./config.status src/config/Proton-config.h
+$(top_srcdir)/src/config/Proton-config.h.in: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 	($(am__cd) $(top_srcdir) && $(AUTOHEADER))
 	rm -f src/config/stamp-h1
 	touch $@
 
 distclean-hdr:
-	-rm -f src/config/proton-config.h src/config/stamp-h1
+	-rm -f src/config/Proton-config.h src/config/stamp-h1
 libbitcoinconsensus.pc: $(top_builddir)/config.status $(srcdir)/libbitcoinconsensus.pc.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 share/setup.nsi: $(top_builddir)/config.status $(top_srcdir)/share/setup.nsi.in
@@ -1193,16 +1193,16 @@ $(BITCOIN_CLI_BIN): FORCE
 @USE_LCOV_TRUE@baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
 @USE_LCOV_TRUE@	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
 
-@USE_LCOV_TRUE@test_proton.info: baseline_filtered_combined.info
+@USE_LCOV_TRUE@test_Proton.info: baseline_filtered_combined.info
 @USE_LCOV_TRUE@	$(MAKE) -C src/ check
-@USE_LCOV_TRUE@	$(LCOV) -c -d $(abs_builddir)/src -t test_proton -o $@
+@USE_LCOV_TRUE@	$(LCOV) -c -d $(abs_builddir)/src -t test_Proton -o $@
 @USE_LCOV_TRUE@	$(LCOV) -z -d $(abs_builddir)/src
 @USE_LCOV_TRUE@	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
-@USE_LCOV_TRUE@test_proton_filtered.info: test_proton.info
+@USE_LCOV_TRUE@test_Proton_filtered.info: test_Proton.info
 @USE_LCOV_TRUE@	$(LCOV) -r $< "/usr/include/*" -o $@
 
-@USE_LCOV_TRUE@block_test.info: test_proton_filtered.info
+@USE_LCOV_TRUE@block_test.info: test_Proton_filtered.info
 @USE_LCOV_TRUE@	$(MKDIR_P) qa/tmp
 @USE_LCOV_TRUE@	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool $(COMPARISON_TOOL_REORG_TESTS)
 @USE_LCOV_TRUE@	$(LCOV) -c -d $(abs_builddir)/src --t BitcoinJBlockTest -o $@
@@ -1212,7 +1212,7 @@ $(BITCOIN_CLI_BIN): FORCE
 @USE_LCOV_TRUE@block_test_filtered.info: block_test.info
 @USE_LCOV_TRUE@	$(LCOV) -r $< "/usr/include/*" -o $@
 
-@USE_LCOV_TRUE@rpc_test.info: test_proton_filtered.info
+@USE_LCOV_TRUE@rpc_test.info: test_Proton_filtered.info
 @USE_LCOV_TRUE@	-@TIMEOUT=15 python qa/pull-tester/rpc-tests.py $(EXTENDED_RPC_TESTS)
 @USE_LCOV_TRUE@	$(LCOV) -c -d $(abs_builddir)/src --t rpc-tests -o $@
 @USE_LCOV_TRUE@	$(LCOV) -z -d $(abs_builddir)/src
@@ -1221,13 +1221,13 @@ $(BITCOIN_CLI_BIN): FORCE
 @USE_LCOV_TRUE@rpc_test_filtered.info: rpc_test.info
 @USE_LCOV_TRUE@	$(LCOV) -r $< "/usr/include/*" -o $@
 
-@USE_LCOV_TRUE@test_proton_coverage.info: baseline_filtered_combined.info test_proton_filtered.info
-@USE_LCOV_TRUE@	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_proton_filtered.info -o $@
+@USE_LCOV_TRUE@test_Proton_coverage.info: baseline_filtered_combined.info test_Proton_filtered.info
+@USE_LCOV_TRUE@	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_Proton_filtered.info -o $@
 
-@USE_LCOV_TRUE@total_coverage.info: baseline_filtered_combined.info test_proton_filtered.info block_test_filtered.info rpc_test_filtered.info
-@USE_LCOV_TRUE@	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_proton_filtered.info -a block_test_filtered.info -a rpc_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+@USE_LCOV_TRUE@total_coverage.info: baseline_filtered_combined.info test_Proton_filtered.info block_test_filtered.info rpc_test_filtered.info
+@USE_LCOV_TRUE@	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_Proton_filtered.info -a block_test_filtered.info -a rpc_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
-@USE_LCOV_TRUE@test_proton.coverage/.dirstamp:  test_proton_coverage.info
+@USE_LCOV_TRUE@test_Proton.coverage/.dirstamp:  test_Proton_coverage.info
 @USE_LCOV_TRUE@	$(GENHTML) -s $< -o $(@D)
 @USE_LCOV_TRUE@	@touch $@
 
@@ -1235,12 +1235,12 @@ $(BITCOIN_CLI_BIN): FORCE
 @USE_LCOV_TRUE@	$(GENHTML) -s $< -o $(@D)
 @USE_LCOV_TRUE@	@touch $@
 
-@USE_LCOV_TRUE@cov: test_proton.coverage/.dirstamp total.coverage/.dirstamp
+@USE_LCOV_TRUE@cov: test_Proton.coverage/.dirstamp total.coverage/.dirstamp
 
 .INTERMEDIATE: $(COVERAGE_INFO)
 
 clean-local:
-	rm -rf coverage_percent.txt test_proton.coverage/ total.coverage/ qa/tmp/ cache/ $(OSX_APP)
+	rm -rf coverage_percent.txt test_Proton.coverage/ total.coverage/ qa/tmp/ cache/ $(OSX_APP)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

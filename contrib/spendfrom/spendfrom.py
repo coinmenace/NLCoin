@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 #
-# Use the raw transactions API to spend protons received on particular addresses,
+# Use the raw transactions API to spend Protons received on particular addresses,
 # and send any change back to that same address.
 #
 # Example usage:
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a protond or Proton-Qt running
+# Assumes it will talk to a Protond or Proton-Qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -38,10 +38,10 @@ def determine_db_dir():
         return os.path.expanduser("~/Library/Application Support/ProtonCore/")
     elif platform.system() == "Windows":
         return os.path.join(os.environ['APPDATA'], "ProtonCore")
-    return os.path.expanduser("~/.protoncore")
+    return os.path.expanduser("~/.Protoncore")
 
 def read_bitcoin_config(dbdir):
-    """Read the proton.conf file from dbdir, returns dictionary of settings"""
+    """Read the Proton.conf file from dbdir, returns dictionary of settings"""
     from ConfigParser import SafeConfigParser
 
     class FakeSecHead(object):
@@ -59,7 +59,7 @@ def read_bitcoin_config(dbdir):
                 return s
 
     config_parser = SafeConfigParser()
-    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "proton.conf"))))
+    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "Proton.conf"))))
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
@@ -72,7 +72,7 @@ def connect_JSON(config):
     try:
         result = ServiceProxy(connect)
         # ServiceProxy is lazy-connect, so send an RPC command mostly to catch connection errors,
-        # but also make sure the protond we're talking to is/isn't testnet:
+        # but also make sure the Protond we're talking to is/isn't testnet:
         if result.getmininginfo()['testnet'] != testnet:
             sys.stderr.write("RPC server at "+connect+" testnet setting mismatch\n")
             sys.exit(1)
@@ -81,36 +81,36 @@ def connect_JSON(config):
         sys.stderr.write("Error connecting to RPC server at "+connect+"\n")
         sys.exit(1)
 
-def unlock_wallet(protond):
-    info = protond.getinfo()
+def unlock_wallet(Protond):
+    info = Protond.getinfo()
     if 'unlocked_until' not in info:
         return True # wallet is not encrypted
     t = int(info['unlocked_until'])
     if t <= time.time():
         try:
             passphrase = getpass.getpass("Wallet is locked; enter passphrase: ")
-            protond.walletpassphrase(passphrase, 5)
+            Protond.walletpassphrase(passphrase, 5)
         except:
             sys.stderr.write("Wrong passphrase\n")
 
-    info = protond.getinfo()
+    info = Protond.getinfo()
     return int(info['unlocked_until']) > time.time()
 
-def list_available(protond):
+def list_available(Protond):
     address_summary = dict()
 
     address_to_account = dict()
-    for info in protond.listreceivedbyaddress(0):
+    for info in Protond.listreceivedbyaddress(0):
         address_to_account[info["address"]] = info["account"]
 
-    unspent = protond.listunspent(0)
+    unspent = Protond.listunspent(0)
     for output in unspent:
         # listunspent doesn't give addresses, so:
-        rawtx = protond.getrawtransaction(output['txid'], 1)
+        rawtx = Protond.getrawtransaction(output['txid'], 1)
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
-        # This code only deals with ordinary pay-to-proton-address
+        # This code only deals with ordinary pay-to-Proton-address
         # or pay-to-script-hash outputs right now; anything exotic is ignored.
         if pk["type"] != "pubkeyhash" and pk["type"] != "scripthash":
             continue
@@ -139,8 +139,8 @@ def select_coins(needed, inputs):
         n += 1
     return (outputs, have-needed)
 
-def create_tx(protond, fromaddresses, toaddress, amount, fee):
-    all_coins = list_available(protond)
+def create_tx(Protond, fromaddresses, toaddress, amount, fee):
+    all_coins = list_available(Protond)
 
     total_available = Decimal("0.0")
     needed = amount+fee
@@ -159,7 +159,7 @@ def create_tx(protond, fromaddresses, toaddress, amount, fee):
     # Note:
     # Python's json/jsonrpc modules have inconsistent support for Decimal numbers.
     # Instead of wrestling with getting json.dumps() (used by jsonrpc) to encode
-    # Decimals, I'm casting amounts to float before sending them to protond.
+    # Decimals, I'm casting amounts to float before sending them to Protond.
     #
     outputs = { toaddress : float(amount) }
     (inputs, change_amount) = select_coins(needed, potential_inputs)
@@ -170,8 +170,8 @@ def create_tx(protond, fromaddresses, toaddress, amount, fee):
         else:
             outputs[change_address] = float(change_amount)
 
-    rawtx = protond.createrawtransaction(inputs, outputs)
-    signed_rawtx = protond.signrawtransaction(rawtx)
+    rawtx = Protond.createrawtransaction(inputs, outputs)
+    signed_rawtx = Protond.signrawtransaction(rawtx)
     if not signed_rawtx["complete"]:
         sys.stderr.write("signrawtransaction failed\n")
         sys.exit(1)
@@ -179,10 +179,10 @@ def create_tx(protond, fromaddresses, toaddress, amount, fee):
 
     return txdata
 
-def compute_amount_in(protond, txinfo):
+def compute_amount_in(Protond, txinfo):
     result = Decimal("0.0")
     for vin in txinfo['vin']:
-        in_info = protond.getrawtransaction(vin['txid'], 1)
+        in_info = Protond.getrawtransaction(vin['txid'], 1)
         vout = in_info['vout'][vin['vout']]
         result = result + vout['value']
     return result
@@ -193,12 +193,12 @@ def compute_amount_out(txinfo):
         result = result + vout['value']
     return result
 
-def sanity_test_fee(protond, txdata_hex, max_fee):
+def sanity_test_fee(Protond, txdata_hex, max_fee):
     class FeeError(RuntimeError):
         pass
     try:
-        txinfo = protond.decoderawtransaction(txdata_hex)
-        total_in = compute_amount_in(protond, txinfo)
+        txinfo = Protond.decoderawtransaction(txdata_hex)
+        total_in = compute_amount_in(Protond, txinfo)
         total_out = compute_amount_out(txinfo)
         if total_in-total_out > max_fee:
             raise FeeError("Rejecting transaction, unreasonable fee of "+str(total_in-total_out))
@@ -221,15 +221,15 @@ def main():
 
     parser = optparse.OptionParser(usage="%prog [options]")
     parser.add_option("--from", dest="fromaddresses", default=None,
-                      help="addresses to get protons from")
+                      help="addresses to get Protons from")
     parser.add_option("--to", dest="to", default=None,
-                      help="address to get send protons to")
+                      help="address to get send Protons to")
     parser.add_option("--amount", dest="amount", default=None,
                       help="amount to send")
     parser.add_option("--fee", dest="fee", default="0.0",
                       help="fee to include")
     parser.add_option("--datadir", dest="datadir", default=determine_db_dir(),
-                      help="location of proton.conf file with RPC username/password (default: %default)")
+                      help="location of Proton.conf file with RPC username/password (default: %default)")
     parser.add_option("--testnet", dest="testnet", default=False, action="store_true",
                       help="Use the test network")
     parser.add_option("--dry_run", dest="dry_run", default=False, action="store_true",
@@ -240,10 +240,10 @@ def main():
     check_json_precision()
     config = read_bitcoin_config(options.datadir)
     if options.testnet: config['testnet'] = True
-    protond = connect_JSON(config)
+    Protond = connect_JSON(config)
 
     if options.amount is None:
-        address_summary = list_available(protond)
+        address_summary = list_available(Protond)
         for address,info in address_summary.iteritems():
             n_transactions = len(info['outputs'])
             if n_transactions > 1:
@@ -253,14 +253,14 @@ def main():
     else:
         fee = Decimal(options.fee)
         amount = Decimal(options.amount)
-        while unlock_wallet(protond) == False:
+        while unlock_wallet(Protond) == False:
             pass # Keep asking for passphrase until they get it right
-        txdata = create_tx(protond, options.fromaddresses.split(","), options.to, amount, fee)
-        sanity_test_fee(protond, txdata, amount*Decimal("0.01"))
+        txdata = create_tx(Protond, options.fromaddresses.split(","), options.to, amount, fee)
+        sanity_test_fee(Protond, txdata, amount*Decimal("0.01"))
         if options.dry_run:
             print(txdata)
         else:
-            txid = protond.sendrawtransaction(txdata)
+            txid = Protond.sendrawtransaction(txdata)
             print(txid)
 
 if __name__ == '__main__':

@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Scegli l'indirizzo a cui inviare i proton</translation>
+        <translation>Scegli l'indirizzo a cui inviare i Proton</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Scegli l'indirizzo con cui ricevere proton</translation>
+        <translation>Scegli l'indirizzo con cui ricevere Proton</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>These are your Proton addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono i tuoi indirizzi Proton per inviare i pagamenti. Controlla sempre l'ammontare e l'indirizzo destinatario prima di inviare i proton.</translation>
+        <translation>Questi sono i tuoi indirizzi Proton per inviare i pagamenti. Controlla sempre l'ammontare e l'indirizzo destinatario prima di inviare i Proton.</translation>
     </message>
     <message>
         <source>These are your Proton addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -176,8 +176,8 @@
         <translation>Conferma la cifratura del portafoglio</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PROTON&lt;/b&gt;!</source>
-        <translation>Attenzione: se crittografi il tuo portafoglio e perdi la tua parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI PROTON&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Proton&lt;/b&gt;!</source>
+        <translation>Attenzione: se crittografi il tuo portafoglio e perdi la tua parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI Proton&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,7 +188,7 @@
         <translation>Portafoglio cifrato</translation>
     </message>
     <message>
-        <source>Proton will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your protons from being stolen by malware infecting your computer.</source>
+        <source>Proton will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Protons from being stolen by malware infecting your computer.</source>
         <translation>Proton adesso si chiuderá per finire il processo di crittografia. Ricorda che crittografare il tuo portafoglio non ti da una protezione totale se il tuo computer é infettato da malware</translation>
     </message>
     <message>
@@ -256,15 +256,15 @@
     </message>
     <message>
         <source>Send coins to a Proton address</source>
-        <translation>Spedire proton ad un indirizzo Proton</translation>
+        <translation>Spedire Proton ad un indirizzo Proton</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
         <translation>&amp;Ricevi</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and proton: URIs)</source>
-        <translation>Richieste di pagamenti (genera codici QR e proton: URLs)</translation>
+        <source>Request payments (generates QR codes and Proton: URIs)</source>
+        <translation>Richieste di pagamenti (genera codici QR e Proton: URLs)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -435,8 +435,8 @@
         <translation>Apri &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a proton: URI or payment request</source>
-        <translation>Apri un proton: URI o una richiesta di pagamento</translation>
+        <source>Open a Proton: URI or payment request</source>
+        <translation>Apri un Proton: URI o una richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -833,27 +833,27 @@ Indirizzo: %4
         <translation>Selezionare il livello di privacy</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 PROTON</source>
-        <translation>Usa 2 separati masternode per mischiare fino al 1000 PROTON</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 Proton</source>
+        <translation>Usa 2 separati masternode per mischiare fino al 1000 Proton</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 PROTON</source>
-        <translation>Usa 8 separati masternode per mischiare fino al 1000 PROTON</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 Proton</source>
+        <translation>Usa 8 separati masternode per mischiare fino al 1000 Proton</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Usa 16 separati masternode</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PROTON to anonymize 1000 PROTON</source>
+        <source>This option is the quickest and will cost about ~0.025 Proton to anonymize 1000 Proton</source>
         <translation>Questa opzione è la più veloce e ti costerà ~0.025DRK circa per anonimizzare 1000DRK</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PROTON to anonymize 1000 PROTON</source>
+        <source>This option is moderately fast and will cost about 0.05 Proton to anonymize 1000 Proton</source>
         <translation>Questa opzione è moderatamente veloce e costerà 0.05DRK circa per anonimizzare 1000DRK</translation>
     </message>
     <message>
-        <source>0.1 PROTON per 1000 PROTON you anonymize.</source>
+        <source>0.1 Proton per 1000 Proton you anonymize.</source>
         <translation>0.1DRK ogni 1000DRK anonimizzati.</translation>
     </message>
     <message>
@@ -1220,9 +1220,9 @@ Indirizzo: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/proton/</source>
+https://www.transifex.com/projects/p/Proton/</source>
         <translation>La tua lingua manca o la traduzione è incompleta? Contribuisci alla traduzione qui: 
-https://www.transifex.com/projects/p/proton/</translation>
+https://www.transifex.com/projects/p/Proton/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1385,8 +1385,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Ammontare e Round:</translation>
     </message>
     <message>
-        <source>0 PROTON / 0 Rounds</source>
-        <translation>0 PROTON / 0 Round</translation>
+        <source>0 Proton / 0 Rounds</source>
+        <translation>0 Proton / 0 Round</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -1494,8 +1494,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Errore di richiesta di pagamento</translation>
     </message>
     <message>
-        <source>Cannot start proton: click-to-pay handler</source>
-        <translation>Impossibile avviare proton: gestore click-to-pay</translation>
+        <source>Cannot start Proton: click-to-pay handler</source>
+        <translation>Impossibile avviare Proton: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2083,7 +2083,7 @@ Più URL vengono separati da una barra verticale |.</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Invia proton</translation>
+        <translation>Invia Proton</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2291,7 +2291,7 @@ Più URL vengono separati da una barra verticale |.</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Conferma l'invio di proton</translation>
+        <translation>Conferma l'invio di Proton</translation>
     </message>
     <message>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
@@ -2401,8 +2401,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Messaggio:</translation>
     </message>
     <message>
-        <source>A message that was attached to the proton: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Proton network.</source>
-        <translation>Un messaggio allegato con l'URI proton che verrà memorizzato nella transazione per il tuo referente. Nota: questo messaggio non verrà inviato attraverso il network Proton.</translation>
+        <source>A message that was attached to the Proton: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Proton network.</source>
+        <translation>Un messaggio allegato con l'URI Proton che verrà memorizzato nella transazione per il tuo referente. Nota: questo messaggio non verrà inviato attraverso il network Proton.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3115,11 +3115,11 @@ Più URL vengono separati da una barra verticale |.</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Invia proton</translation>
+        <translation>Invia Proton</translation>
     </message>
     <message>
-        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 PROTON.</source>
-        <translation>InstantX non supporta ancora l'invio di somme così alte. Le transazioni sono attualmente limitate al %1 PROTON.</translation>
+        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 Proton.</source>
+        <translation>InstantX non supporta ancora l'invio di somme così alte. Le transazioni sono attualmente limitate al %1 Proton.</translation>
     </message>
 </context>
 <context>
@@ -3158,7 +3158,7 @@ Più URL vengono separati da una barra verticale |.</translation>
     </message>
 </context>
 <context>
-    <name>proton-core</name>
+    <name>Proton-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Associa all'indirizzo indicato e resta permanentemente in ascolto su questo. Usa la notazione [host]:porta per l'IPv6</translation>
@@ -3228,8 +3228,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Impossibile trovare fondi sufficienti Darksend denominati per questa transazione.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 PROTON.</source>
-        <translation>Impossibile trovare un numero sufficiente di non denominati fondi Darksend per questa operazione che non sono uguali a 1000 PROTON.</translation>
+        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 Proton.</source>
+        <translation>Impossibile trovare un numero sufficiente di non denominati fondi Darksend per questa operazione che non sono uguali a 1000 Proton.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3440,12 +3440,12 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Abilita utilizzo di darksend automatizzato per i fondi conservati in questo portafoglio (0-1, predefinito: %u)</translation>
     </message>
     <message>
-        <source>Fees (in PROTON/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Le commissioni (in PROTON/Kb) inferiori a questo valore saranno considerate nulle per la trasmissione (prefedinito:%s)</translation>
+        <source>Fees (in Proton/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Le commissioni (in Proton/Kb) inferiori a questo valore saranno considerate nulle per la trasmissione (prefedinito:%s)</translation>
     </message>
     <message>
-        <source>Fees (in PROTON/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Le commissioni (in PROTON/Kb)  inferiori a questo valore saranno considerate nulle per la creazione della transazione (prefedinito:%s)</translation>
+        <source>Fees (in Proton/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Le commissioni (in Proton/Kb)  inferiori a questo valore saranno considerate nulle per la creazione della transazione (prefedinito:%s)</translation>
     </message>
     <message>
         <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>

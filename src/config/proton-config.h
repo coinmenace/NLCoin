@@ -1,9 +1,9 @@
-/* src/config/proton-config.h.  Generated from proton-config.h.in by configure.  */
-/* src/config/proton-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/Proton-config.h.  Generated from Proton-config.h.in by configure.  */
+/* src/config/Proton-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef PROTON_CONFIG_H
+#ifndef Proton_CONFIG_H
 
-#define PROTON_CONFIG_H
+#define Proton_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -302,7 +302,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+#define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Proton Core"
@@ -311,7 +311,7 @@
 #define PACKAGE_STRING "Proton Core 2.0.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "protoncore"
+#define PACKAGE_TARNAME "Protoncore"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
@@ -374,4 +374,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //PROTON_CONFIG_H
+#endif //Proton_CONFIG_H

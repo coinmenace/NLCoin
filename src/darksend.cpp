@@ -2196,10 +2196,10 @@ int CDarksendPool::GetDenominations(const std::vector<CTxOut>& vecTxOut, bool fS
 bool CDarksendPool::GetDenominationsBits(int nDenom, std::vector<int> &vecBitsRet)
 {
     // ( bit on if present, 4 denominations example )
-    // bit 0 - 100PROTON+1
-    // bit 1 - 10PROTON+1
-    // bit 2 - 1PROTON+1
-    // bit 3 - .1PROTON+1
+    // bit 0 - 100Proton+1
+    // bit 1 - 10Proton+1
+    // bit 2 - 1Proton+1
+    // bit 3 - .1Proton+1
 
     int nMaxDenoms = vecPrivateSendDenominations.size();
 
@@ -2470,7 +2470,7 @@ void ThreadCheckDarkSendPool()
     fOneThread = true;
 
     // Make this thread recognisable as the PrivateSend thread
-    RenameThread("proton-privatesend");
+    RenameThread("Proton-privatesend");
 
     unsigned int nTick = 0;
     unsigned int nDoAutoNextRun = nTick + PRIVATESEND_AUTO_TIMEOUT_MIN;

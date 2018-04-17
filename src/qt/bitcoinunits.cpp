@@ -20,9 +20,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(PROTON);
-    unitlist.append(mPROTON);
-    unitlist.append(uPROTON);
+    unitlist.append(Proton);
+    unitlist.append(mProton);
+    unitlist.append(uProton);
     unitlist.append(duffs);
     return unitlist;
 }
@@ -31,9 +31,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case PROTON:
-    case mPROTON:
-    case uPROTON:
+    case Proton:
+    case mProton:
+    case uProton:
     case duffs:
         return true;
     default:
@@ -47,9 +47,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case PROTON: return QString("PROTON");
-            case mPROTON: return QString("mPROTON");
-            case uPROTON: return QString::fromUtf8("μPROTON");
+            case Proton: return QString("Proton");
+            case mProton: return QString("mProton");
+            case uProton: return QString::fromUtf8("μProton");
             case duffs: return QString("duffs");
             default: return QString("???");
         }
@@ -58,9 +58,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case PROTON: return QString("tPROTON");
-            case mPROTON: return QString("mtPROTON");
-            case uPROTON: return QString::fromUtf8("μtPROTON");
+            case Proton: return QString("tProton");
+            case mProton: return QString("mtProton");
+            case uProton: return QString::fromUtf8("μtProton");
             case duffs: return QString("tduffs");
             default: return QString("???");
         }
@@ -73,9 +73,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case PROTON: return QString("Proton");
-            case mPROTON: return QString("Milli-Proton (1 / 1" THIN_SP_UTF8 "000)");
-            case uPROTON: return QString("Micro-Proton (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case Proton: return QString("Proton");
+            case mProton: return QString("Milli-Proton (1 / 1" THIN_SP_UTF8 "000)");
+            case uProton: return QString("Micro-Proton (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case duffs: return QString("Ten Nano-Proton (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -84,9 +84,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case PROTON: return QString("TestProtons");
-            case mPROTON: return QString("Milli-TestProton (1 / 1" THIN_SP_UTF8 "000)");
-            case uPROTON: return QString("Micro-TestProton (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case Proton: return QString("TestProtons");
+            case mProton: return QString("Milli-TestProton (1 / 1" THIN_SP_UTF8 "000)");
+            case uProton: return QString("Micro-TestProton (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case duffs: return QString("Ten Nano-TestProton (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -97,9 +97,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case PROTON:  return 100000000;
-    case mPROTON: return 100000;
-    case uPROTON: return 100;
+    case Proton:  return 100000000;
+    case mProton: return 100000;
+    case uProton: return 100;
     case duffs: return 1;
     default:   return 100000000;
     }
@@ -109,9 +109,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case PROTON: return 8;
-    case mPROTON: return 5;
-    case uPROTON: return 2;
+    case Proton: return 8;
+    case mProton: return 5;
+    case uProton: return 2;
     case duffs: return 0;
     default: return 0;
     }

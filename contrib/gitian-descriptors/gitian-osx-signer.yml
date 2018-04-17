@@ -1,5 +1,5 @@
 ---
-name: "proton-dmg-signer"
+name: "Proton-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -8,10 +8,10 @@ packages:
 - "faketime"
 reference_datetime: "2017-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/nlcoin/protoncoin-detached-sigs.git"
+- "url": "https://github.com/nlcoin/Protoncoin-detached-sigs.git"
   "dir": "signature"
 files:
-- "proton-osx-unsigned.tar.gz"
+- "Proton-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -28,8 +28,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=proton-osx-unsigned.tar.gz
-  SIGNED=proton-osx-signed.dmg
+  UNSIGNED=Proton-osx-unsigned.tar.gz
+  SIGNED=Proton-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   ./detached-sig-apply.sh ${UNSIGNED} signature/osx

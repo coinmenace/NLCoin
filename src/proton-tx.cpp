@@ -52,10 +52,10 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || mapArgs.count("-?") || mapArgs.count("-h") || mapArgs.count("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Proton Core proton-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Proton Core Proton-tx utility version") + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  proton-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded proton transaction") + "\n" +
-              "  proton-tx [options] -create [commands]   " + _("Create hex-encoded proton transaction") + "\n" +
+              "  Proton-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded Proton transaction") + "\n" +
+              "  Proton-tx [options] -create [commands]   " + _("Create hex-encoded Proton transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -609,7 +609,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw runtime_error("too few parameters");
 
-            // param: hex-encoded proton transaction
+            // param: hex-encoded Proton transaction
             string strHexTx(argv[1]);
             if (strHexTx == "-")                 // "-" implies standard input
                 strHexTx = readStdin();

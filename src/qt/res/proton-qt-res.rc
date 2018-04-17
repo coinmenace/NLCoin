@@ -21,10 +21,10 @@ BEGIN
             VALUE "CompanyName",        "Proton"
             VALUE "FileDescription",    "Proton Core (GUI node for Proton)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "proton-qt"
+            VALUE "InternalName",       "Proton-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "proton-qt.exe"
+            VALUE "OriginalFilename",   "Proton-qt.exe"
             VALUE "ProductName",        "Proton Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

@@ -5,7 +5,7 @@
 #include "chain.h"
 #include "random.h"
 #include "util.h"
-#include "test/test_proton.h"
+#include "test/test_Proton.h"
 
 #include <vector>
 

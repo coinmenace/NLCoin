@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. proton_test
+	$(MAKE) -C .. Proton_test
 clean:
-	$(MAKE) -C .. proton_test_clean
+	$(MAKE) -C .. Proton_test_clean
 check:
-	$(MAKE) -C .. proton_test_check
+	$(MAKE) -C .. Proton_test_check
