@@ -1,7 +1,7 @@
 Proton Core 1.0.0
 =====================
 
-This is the official reference wallet for Proton digital currency and comprises the backbone of the Proton peer-to-peer network. You can [download Proton Core](https://nlcoin.io) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Proton digital currency and comprises the backbone of the Proton peer-to-peer network. You can [download Proton Core](https://protoncoin.io) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -16,7 +16,7 @@ Unpack the files into a directory and run:
 
 ### Windows
 
-Unpack the files into a directory, and then run Proton-qt.exe.
+Unpack the files into a directory, and then run proton-qt.exe.
 
 ### OS X
 
@@ -24,10 +24,10 @@ Drag Proton-Qt to your applications folder, and then run Proton-Qt.
 
 ### Need Help?
 
-* See the [Proton documentation](https://nlcoin.atlassian.net/wiki/display/DOC)
+* See the [Proton documentation](https://protoncoin.atlassian.net/wiki/display/DOC)
 for help and more information.
-* Ask for help on [#nlcoin](http://webchat.freenode.net?channels=Protoncoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=Protoncoin).
-* Ask for help on the [ProtonTalk](https://Protontalk.org/) forums.
+* Ask for help on [#protoncoin](http://webchat.freenode.net?channels=protoncoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=protoncoin).
+* Ask for help on the [ProtonTalk](https://protontalk.org/) forums.
 
 Building
 ---------------------
@@ -57,8 +57,8 @@ The Proton Core repo's [root README](/README.md) contains relevant information o
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [ProtonTalk](https://Protontalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#nlcoin](http://webchat.freenode.net/?channels=Protoncoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=Protoncoin).
+* Discuss on the [ProtonTalk](https://protontalk.org/) forums, in the Development & Technical Discussion board.
+* Discuss on [#protoncoin](http://webchat.freenode.net/?channels=protoncoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=protoncoin).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

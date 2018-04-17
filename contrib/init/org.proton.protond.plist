@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.Proton.Protond</string>
+	<string>org.proton.protond</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/Protond</string>
+		<string>/usr/local/bin/protond</string>
 		<string>-daemon</string>
 	</array>
 	<key>RunAtLoad</key>

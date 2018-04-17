@@ -11,13 +11,13 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-Unpack the files into a directory and run Proton-qt.exe.
+Unpack the files into a directory and run proton-qt.exe.
 
 Proton Core is the original Proton client and it builds the backbone of the network.
 However, it downloads and stores the entire history of Proton transactions;
 depending on the speed of your computer and network connection, the synchronization
 process can take anywhere from a few hours to a day or more.
 
-See the Proton wiki at:
-  https://nlcoin.atlassian.net/wiki/
+See the proton wiki at:
+  https://protoncoin.atlassian.net/wiki/
 for more help and information.

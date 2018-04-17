@@ -3,13 +3,13 @@ Description=Proton's distributed currency daemon
 After=network.target
 
 [Service]
-User=Protoncore
-Group=Protoncore
+User=protoncore
+Group=protoncore
 
 Type=forking
-PIDFile=/var/lib/Protond/Protond.pid
-ExecStart=/usr/bin/Protond -daemon -pid=/var/lib/Protond/Protond.pid \
--conf=/etc/Protoncore/Proton.conf -datadir=/var/lib/Protond -disablewallet
+PIDFile=/var/lib/protond/protond.pid
+ExecStart=/usr/bin/protond -daemon -pid=/var/lib/protond/protond.pid \
+-conf=/etc/protoncore/proton.conf -datadir=/var/lib/protond -disablewallet
 
 Restart=always
 PrivateTmp=true

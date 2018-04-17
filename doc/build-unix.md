@@ -24,7 +24,7 @@ make
 make install # optional
 ```
 
-This will build Proton-qt as well if the dependencies are met.
+This will build proton-qt as well if the dependencies are met.
 
 Dependencies
 ---------------------
@@ -115,12 +115,12 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-Once these are installed, they will be found by configure and a Proton-qt executable will be
+Once these are installed, they will be found by configure and a proton-qt executable will be
 built by default.
 
 Notes
 -----
-The release is built with GCC and then "strip Protond" to strip the debug
+The release is built with GCC and then "strip protond" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -141,10 +141,10 @@ Berkeley DB
 It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 
 ```bash
-Proton_ROOT=$(pwd)
+PROTON_ROOT=$(pwd)
 
-# Pick some path to install BDB to, here we create a directory within the Proton directory
-BDB_PREFIX="${Proton_ROOT}/db4"
+# Pick some path to install BDB to, here we create a directory within the proton directory
+BDB_PREFIX="${PROTON_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 
 # Fetch the source and verify that it is not tampered with
@@ -160,7 +160,7 @@ cd db-4.8.30.NC/build_unix/
 make install
 
 # Configure Proton Core to use our own-built instance of BDB
-cd $Proton_ROOT
+cd $PROTON_ROOT
 ./autogen.sh
 ./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/" # (other args...)
 ```
@@ -202,7 +202,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./Protond
+    	scanelf -e ./protond
 
     The output should contain:
 
@@ -217,7 +217,7 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./Protond`
+    `scanelf -e ./protond`
 
     the output should contain:
 	STK/REL/PTL

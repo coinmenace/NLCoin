@@ -3,11 +3,11 @@
 
 Proton Core version 1.0.0 is now available from:
 
-  https://nlcoin.io/downloads
+  https://protoncoin.io/downloads
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/nlcoin/Proton/issues
+  https://github.com/protoncoin/proton/issues
 
 
 How to Upgrade
@@ -16,7 +16,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/Proton-Qt (on Mac) or
-Protond/Proton-qt (on Linux).
+protond/proton-qt (on Linux).
 
 **This new version uses transaction indexing by default, you will need to reindex 
 the blockchain. To do so, start the client with --reindex.**
@@ -32,6 +32,6 @@ Credits
 
 Thanks to who contributed to this release, at least:
 
-nlcoingroup
+protoncoingroup
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/Proton/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/proton/).

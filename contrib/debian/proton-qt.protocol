@@ -1,6 +1,6 @@
 [Protocol]
-exec=Proton-qt '%u'
-protocol=Proton
+exec=proton-qt '%u'
+protocol=proton
 input=none
 output=none
 helper=true
