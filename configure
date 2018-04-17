@@ -275,10 +275,10 @@ fi
     $as_echo "$0: be upgraded to zsh 4.3.4 or later."
   else
     $as_echo "$0: Please tell bug-autoconf@gnu.org and
-$0: https://github.com/nlcoin/Protoncoin/issues about
-$0: your system, including any error possibly output before
-$0: this message. Then install a modern shell, or manually
-$0: run the script under such a shell if you do have one."
+$0: https://github.com/nlcoin/Protoncoin/issues about your
+$0: system, including any error possibly output before this
+$0: message. Then install a modern shell, or manually run
+$0: the script under such a shell if you do have one."
   fi
   exit 1
 fi
@@ -1730,7 +1730,7 @@ Optional Packages:
   --with-daemon           build Protond daemon (default=yes)
   --with-incompatible-bdb allow using a bdb version other than 4.8
   --with-gui[=no|qt4|qt5|auto]
-                          build Proton-qt GUI (default=auto, qt5 tried first)
+                          build proton-qt GUI (default=auto, qt5 tried first)
   --with-qt-incdir=INC_DIR
                           specify qt include path (overridden by pkgconfig)
   --with-qt-libdir=LIB_DIR
@@ -2582,9 +2582,9 @@ $as_echo "$as_me: WARNING: $2: see the Autoconf documentation" >&2;}
 $as_echo "$as_me: WARNING: $2:     section \"Present But Cannot Be Compiled\"" >&2;}
     { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: $2: proceeding with the compiler's result" >&5
 $as_echo "$as_me: WARNING: $2: proceeding with the compiler's result" >&2;}
-( $as_echo "## -------------------------------------------------------------- ##
+( $as_echo "## ---------------------------------------------------------- ##
 ## Report this to https://github.com/nlcoin/Protoncoin/issues ##
-## -------------------------------------------------------------- ##"
+## ---------------------------------------------------------- ##"
      ) | sed "s/^/$as_me: WARNING:     /" >&2
     ;;
 esac
@@ -24729,8 +24729,8 @@ fi
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Qt dependencies not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: Qt dependencies not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Qt dependencies not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: Qt dependencies not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -24940,8 +24940,8 @@ else
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: QtCore headers missing; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: QtCore headers missing; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: QtCore headers missing; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: QtCore headers missing; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -24967,8 +24967,8 @@ else
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: QtGui headers missing; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: QtGui headers missing; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: QtGui headers missing; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: QtGui headers missing; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -24994,8 +24994,8 @@ else
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: QtNetwork headers missing; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: QtNetwork headers missing; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: QtNetwork headers missing; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: QtNetwork headers missing; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -25120,8 +25120,8 @@ else
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libimm32 not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: libimm32 not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libimm32 not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: libimm32 not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -25505,8 +25505,8 @@ else
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib${QT_LIB_PREFIX}Core not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: lib${QT_LIB_PREFIX}Core not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib${QT_LIB_PREFIX}Core not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: lib${QT_LIB_PREFIX}Core not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -25567,8 +25567,8 @@ else
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib${QT_LIB_PREFIX}Gui not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: lib${QT_LIB_PREFIX}Gui not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib${QT_LIB_PREFIX}Gui not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: lib${QT_LIB_PREFIX}Gui not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -25629,8 +25629,8 @@ else
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib${QT_LIB_PREFIX}Network not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: lib${QT_LIB_PREFIX}Network not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib${QT_LIB_PREFIX}Network not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: lib${QT_LIB_PREFIX}Network not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -25692,8 +25692,8 @@ else
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib${QT_LIB_PREFIX}Widgets not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: lib${QT_LIB_PREFIX}Widgets not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib${QT_LIB_PREFIX}Widgets not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: lib${QT_LIB_PREFIX}Widgets not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -26365,8 +26365,8 @@ else
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib${QT_LIB_PREFIX}PlatformSupport not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: lib${QT_LIB_PREFIX}PlatformSupport not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib${QT_LIB_PREFIX}PlatformSupport not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: lib${QT_LIB_PREFIX}PlatformSupport not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -26458,8 +26458,8 @@ else
 $as_echo "no" >&6; };
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqtaccessiblewidgets; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: Could not resolve: -lqtaccessiblewidgets; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqtaccessiblewidgets; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: Could not resolve: -lqtaccessiblewidgets; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -26500,8 +26500,8 @@ else
 $as_echo "no" >&6; };
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqminimal; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: Could not resolve: -lqminimal; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqminimal; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: Could not resolve: -lqminimal; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -26545,8 +26545,8 @@ else
 $as_echo "no" >&6; };
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqwindows; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: Could not resolve: -lqwindows; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqwindows; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: Could not resolve: -lqwindows; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -26590,8 +26590,8 @@ else
 $as_echo "no" >&6; };
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqxcb -lxcb-static; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: Could not resolve: -lqxcb -lxcb-static; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqxcb -lxcb-static; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: Could not resolve: -lqxcb -lxcb-static; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -26671,8 +26671,8 @@ else
 $as_echo "no" >&6; };
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqcocoa; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: Could not resolve: -lqcocoa; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqcocoa; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: Could not resolve: -lqcocoa; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -26727,8 +26727,8 @@ else
 $as_echo "no" >&6; };
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqcncodecs -lqjpcodecs -lqtwcodecs -lqkrcodecs -lqtaccessiblewidgets; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: Could not resolve: -lqcncodecs -lqjpcodecs -lqtwcodecs -lqkrcodecs -lqtaccessiblewidgets; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Could not resolve: -lqcncodecs -lqjpcodecs -lqtwcodecs -lqkrcodecs -lqtaccessiblewidgets; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: Could not resolve: -lqcncodecs -lqjpcodecs -lqtwcodecs -lqkrcodecs -lqtaccessiblewidgets; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -26955,8 +26955,8 @@ done
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: MOC not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: MOC not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: MOC not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: MOC not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -27074,8 +27074,8 @@ done
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: UIC not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: UIC not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: UIC not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: UIC not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -27193,8 +27193,8 @@ done
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: RCC not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: RCC not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: RCC not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: RCC not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -27312,8 +27312,8 @@ done
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: LRELEASE not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: LRELEASE not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: LRELEASE not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: LRELEASE not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -27431,8 +27431,8 @@ done
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: LUPDATE not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: LUPDATE not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: LUPDATE not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: LUPDATE not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -29772,8 +29772,8 @@ fi
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libprotobuf not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: libprotobuf not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libprotobuf not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: libprotobuf not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -29787,8 +29787,8 @@ $as_echo "no" >&6; }
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libprotobuf not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: libprotobuf not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libprotobuf not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: libprotobuf not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -30425,8 +30425,8 @@ else
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libprotobuf not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: libprotobuf not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libprotobuf not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: libprotobuf not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -30789,8 +30789,8 @@ done
 
   if test "x$bitcoin_qt_want_version" = xauto && test "x$bitcoin_qt_force" != xyes; then
     if test "x$bitcoin_enable_qt" != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: PROTOC not found; Proton-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: PROTOC not found; Proton-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: PROTOC not found; proton-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: PROTOC not found; proton-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no

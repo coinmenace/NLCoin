@@ -30,8 +30,8 @@ Kernel configured for up to 4 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1 2 3
 Primary memory available: 8.00 gigabytes
-Default processor set: 291 tasks, 1423 threads, 4 processors
-Load average: 2.83, Mach factor: 1.40
+Default processor set: 317 tasks, 1674 threads, 4 processors
+Load average: 2.17, Mach factor: 1.82
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -405,10 +405,10 @@ configure:9818: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
@@ -425,10 +425,10 @@ configure:9877: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
@@ -527,10 +527,10 @@ configure:14377: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -559,10 +559,10 @@ configure:14436: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -747,10 +747,10 @@ configure:21423: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -793,10 +793,10 @@ configure:21856: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -857,10 +857,10 @@ configure:22462: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -935,10 +935,10 @@ configure:22540: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1024,10 +1024,10 @@ configure:23062: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1065,10 +1065,10 @@ configure:23098: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1106,10 +1106,10 @@ configure:23134: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1147,10 +1147,10 @@ configure:23170: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1188,10 +1188,10 @@ configure:23206: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1244,10 +1244,10 @@ configure:23387: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1313,10 +1313,10 @@ configure:23387: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1351,10 +1351,10 @@ configure:23387: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1420,10 +1420,10 @@ configure:23387: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1458,10 +1458,10 @@ configure:23387: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1527,10 +1527,10 @@ configure:23387: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1595,10 +1595,10 @@ configure:23387: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1671,10 +1671,10 @@ configure:23387: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1710,17 +1710,17 @@ configure:23397: checking for library containing getaddrinfo_a
 configure:23428: g++ -std=c++11 -o conftest -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/Cellar/berkeley-db@4/4.8.30/include -DMAC_OSX  -Wl,-headerpad_max_install_names -Wl,-dead_strip conftest.cpp  -L/opt/local/lib -L/opt/local/lib/db48 -L/usr/local/Cellar/berkeley-db@4/4.8.30/lib >&5
 Undefined symbols for architecture x86_64:
   "_getaddrinfo_a", referenced from:
-      _main in conftest-5b378d.o
+      _main in conftest-676549.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:23428: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1770,10 +1770,10 @@ configure:23428: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1846,10 +1846,10 @@ configure:23539: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1911,10 +1911,10 @@ configure:23554: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1977,10 +1977,10 @@ configure:23569: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2044,10 +2044,10 @@ configure:23584: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2112,10 +2112,10 @@ configure:23599: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2181,10 +2181,10 @@ configure:23614: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2251,10 +2251,10 @@ configure:23629: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2322,10 +2322,10 @@ configure:23644: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2394,10 +2394,10 @@ configure:23659: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2467,10 +2467,10 @@ configure:23674: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2541,10 +2541,10 @@ configure:23689: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2616,10 +2616,10 @@ configure:23704: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2692,10 +2692,10 @@ configure:23721: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2767,10 +2767,10 @@ configure:23734: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2843,10 +2843,10 @@ configure:23747: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2920,10 +2920,10 @@ configure:23762: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3027,10 +3027,10 @@ configure:23772: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3135,10 +3135,10 @@ configure:23782: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3244,10 +3244,10 @@ configure:23807: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3323,10 +3323,10 @@ configure:23857: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3395,10 +3395,10 @@ configure:23882: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3471,10 +3471,10 @@ configure:23940: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3546,10 +3546,10 @@ configure:23965: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3629,10 +3629,10 @@ configure:24018: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3709,10 +3709,10 @@ configure:24148: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3787,10 +3787,10 @@ configure:24148: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3865,10 +3865,10 @@ configure:24148: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3943,10 +3943,10 @@ configure:24148: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -4021,10 +4021,10 @@ configure:24148: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -4194,10 +4194,10 @@ configure:25886: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -4364,17 +4364,17 @@ configure:29438: checking for mismatched boost c++11 scoped enums
 configure:29466: g++ -std=c++11 -o conftest -g -O2 -Wall -Wextra -Wformat -Wvla -Wformat-security -Wno-unused-parameter -Wno-self-assign -Wno-unused-local-typedef -Wno-deprecated-register -Wno-implicit-fallthrough  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -isystem /opt/local/include -I/opt/local/include/db48 -I/usr/local/Cellar/berkeley-db@4/4.8.30/include -DMAC_OSX -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -pthread -I/usr/local/include  -Wl,-headerpad_max_install_names -Wl,-dead_strip conftest.cpp -L/usr/local/lib -lboost_system -lboost_filesystem -lboost_program_options-mt -lboost_thread -lboost_chrono-mt  -L/opt/local/lib -L/opt/local/lib/db48 -L/usr/local/Cellar/berkeley-db@4/4.8.30/lib >&5
 Undefined symbols for architecture x86_64:
   "boost::filesystem::detail::copy_file(boost::filesystem::path const&, boost::filesystem::path const&, boost::filesystem::copy_option::enum_type, boost::system::error_code*)", referenced from:
-      _main in conftest-8b6725.o
+      _main in conftest-3ba814.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:29466: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "Proton Core"
-| #define PACKAGE_TARNAME "protoncore"
+| #define PACKAGE_TARNAME "Protoncore"
 | #define PACKAGE_VERSION "2.0.0"
 | #define PACKAGE_STRING "Proton Core 2.0.0"
-| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+| #define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -4843,10 +4843,10 @@ AWK='gawk'
 BDB_CFLAGS=''
 BDB_CPPFLAGS=' -I/opt/local/include/db48/'
 BDB_LIBS='-ldb_cxx-4.8'
-BITCOIN_CLI_NAME='proton-cli'
-BITCOIN_DAEMON_NAME='protond'
-BITCOIN_GUI_NAME='proton-qt'
-BITCOIN_TX_NAME='proton-tx'
+BITCOIN_CLI_NAME='Proton-cli'
+BITCOIN_DAEMON_NAME='Protond'
+BITCOIN_GUI_NAME='Proton-qt'
+BITCOIN_TX_NAME='Proton-tx'
 BOOST_CHRONO_LIB='-lboost_chrono-mt'
 BOOST_CPPFLAGS='-DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -pthread -I/usr/local/include'
 BOOST_FILESYSTEM_LIB='-lboost_filesystem'
@@ -4986,11 +4986,11 @@ OBJDUMP='objdump'
 OBJEXT='o'
 OTOOL64=':'
 OTOOL='otool'
-PACKAGE='protoncore'
-PACKAGE_BUGREPORT='https://github.com/nlcoin/protoncoin/issues'
+PACKAGE='Protoncore'
+PACKAGE_BUGREPORT='https://github.com/nlcoin/Protoncoin/issues'
 PACKAGE_NAME='Proton Core'
 PACKAGE_STRING='Proton Core 2.0.0'
-PACKAGE_TARNAME='protoncore'
+PACKAGE_TARNAME='Protoncore'
 PACKAGE_URL=''
 PACKAGE_VERSION='2.0.0'
 PATH_SEPARATOR=':'
@@ -5133,10 +5133,10 @@ target_alias=''
 
 /* confdefs.h */
 #define PACKAGE_NAME "Proton Core"
-#define PACKAGE_TARNAME "protoncore"
+#define PACKAGE_TARNAME "Protoncore"
 #define PACKAGE_VERSION "2.0.0"
 #define PACKAGE_STRING "Proton Core 2.0.0"
-#define PACKAGE_BUGREPORT "https://github.com/nlcoin/protoncoin/issues"
+#define PACKAGE_BUGREPORT "https://github.com/nlcoin/Protoncoin/issues"
 #define PACKAGE_URL ""
 #define HAVE_CXX11 1
 #define STDC_HEADERS 1

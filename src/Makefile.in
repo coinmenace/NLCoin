@@ -965,39 +965,15 @@ libbitcoinconsensus_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 @ENABLE_QT_TRUE@am__EXEEXT_5 = qt/Proton-qt$(EXEEXT)
 @ENABLE_QT_TESTS_TRUE@am__EXEEXT_6 = qt/test/test_Proton-qt$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
-am__bench_bench_Proton_SOURCES_DIST = bench/bench_Proton.cpp \
-	bench/bench.cpp bench/bench.h bench/Examples.cpp
-@ENABLE_BENCH_TRUE@am_bench_bench_Proton_OBJECTS = bench/bench_bench_Proton-bench_Proton.$(OBJEXT) \
-@ENABLE_BENCH_TRUE@	bench/bench_bench_Proton-bench.$(OBJEXT) \
-@ENABLE_BENCH_TRUE@	bench/bench_bench_Proton-Examples.$(OBJEXT)
-bench_bench_Proton_OBJECTS = $(am_bench_bench_Proton_OBJECTS)
-am__DEPENDENCIES_1 = $(am__append_14)
-am__DEPENDENCIES_2 = $(am__append_15)
-am__DEPENDENCIES_3 =
-@ENABLE_BENCH_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_4 =  \
-@ENABLE_BENCH_TRUE@@ENABLE_ZMQ_TRUE@	$(LIBBITCOIN_ZMQ) \
-@ENABLE_BENCH_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_3)
-@ENABLE_BENCH_TRUE@bench_bench_Proton_DEPENDENCIES =  \
-@ENABLE_BENCH_TRUE@	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
-@ENABLE_BENCH_TRUE@	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-@ENABLE_BENCH_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) \
-@ENABLE_BENCH_TRUE@	$(LIBSECP256K1) $(am__DEPENDENCIES_4) \
-@ENABLE_BENCH_TRUE@	$(am__append_30) $(am__DEPENDENCIES_3) \
-@ENABLE_BENCH_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-@ENABLE_BENCH_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-@ENABLE_BENCH_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
-bench_bench_Proton_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
-	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
-	$(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) \
-	$(bench_bench_Proton_LDFLAGS) $(LDFLAGS) -o $@
 am__Proton_cli_SOURCES_DIST = Proton-cli.cpp Proton-cli-res.rc
 @TARGET_WINDOWS_TRUE@am__objects_13 = Proton-cli-res.$(OBJEXT)
 am_Proton_cli_OBJECTS = Proton_cli-Proton-cli.$(OBJEXT) \
 	$(am__objects_13)
 Proton_cli_OBJECTS = $(am_Proton_cli_OBJECTS)
+am__DEPENDENCIES_1 =
 Proton_cli_DEPENDENCIES = $(LIBBITCOIN_CLI) $(LIBUNIVALUE) \
-	$(LIBBITCOIN_UTIL) $(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
+	$(LIBBITCOIN_UTIL) $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 Proton_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(Proton_cli_CXXFLAGS) \
 	$(CXXFLAGS) $(Proton_cli_LDFLAGS) $(LDFLAGS) -o $@
@@ -1007,7 +983,7 @@ am_Proton_tx_OBJECTS = Proton_tx-Proton-tx.$(OBJEXT) $(am__objects_14)
 Proton_tx_OBJECTS = $(am_Proton_tx_OBJECTS)
 Proton_tx_DEPENDENCIES = $(LIBUNIVALUE) $(LIBBITCOIN_COMMON) \
 	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBSECP256K1) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 Proton_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(Proton_tx_CXXFLAGS) \
 	$(CXXFLAGS) $(Proton_tx_LDFLAGS) $(LDFLAGS) -o $@
@@ -1015,18 +991,42 @@ am__Protond_SOURCES_DIST = Protond.cpp Protond-res.rc
 @TARGET_WINDOWS_TRUE@am__objects_15 = Protond-res.$(OBJEXT)
 am_Protond_OBJECTS = Protond-Protond.$(OBJEXT) $(am__objects_15)
 Protond_OBJECTS = $(am_Protond_OBJECTS)
-@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_5 = $(LIBBITCOIN_ZMQ) \
-@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_3)
+am__DEPENDENCIES_2 = $(am__append_14)
+am__DEPENDENCIES_3 = $(am__append_15)
+@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_4 = $(LIBBITCOIN_ZMQ) \
+@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_1)
 Protond_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(LIBUNIVALUE) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) $(LIBSECP256K1) \
-	$(am__DEPENDENCIES_5) $(am__append_9) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
+	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) $(LIBSECP256K1) \
+	$(am__DEPENDENCIES_4) $(am__append_9) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 Protond_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(Protond_CXXFLAGS) \
 	$(CXXFLAGS) $(Protond_LDFLAGS) $(LDFLAGS) -o $@
+am__bench_bench_Proton_SOURCES_DIST = bench/bench_Proton.cpp \
+	bench/bench.cpp bench/bench.h bench/Examples.cpp
+@ENABLE_BENCH_TRUE@am_bench_bench_Proton_OBJECTS = bench/bench_bench_Proton-bench_Proton.$(OBJEXT) \
+@ENABLE_BENCH_TRUE@	bench/bench_bench_Proton-bench.$(OBJEXT) \
+@ENABLE_BENCH_TRUE@	bench/bench_bench_Proton-Examples.$(OBJEXT)
+bench_bench_Proton_OBJECTS = $(am_bench_bench_Proton_OBJECTS)
+@ENABLE_BENCH_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_5 =  \
+@ENABLE_BENCH_TRUE@@ENABLE_ZMQ_TRUE@	$(LIBBITCOIN_ZMQ) \
+@ENABLE_BENCH_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_1)
+@ENABLE_BENCH_TRUE@bench_bench_Proton_DEPENDENCIES =  \
+@ENABLE_BENCH_TRUE@	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
+@ENABLE_BENCH_TRUE@	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+@ENABLE_BENCH_TRUE@	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) \
+@ENABLE_BENCH_TRUE@	$(LIBSECP256K1) $(am__DEPENDENCIES_5) \
+@ENABLE_BENCH_TRUE@	$(am__append_30) $(am__DEPENDENCIES_1) \
+@ENABLE_BENCH_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+@ENABLE_BENCH_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+@ENABLE_BENCH_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
+bench_bench_Proton_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
+	$(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) \
+	$(bench_bench_Proton_LDFLAGS) $(LDFLAGS) -o $@
 am__qt_Proton_qt_SOURCES_DIST = qt/Proton.cpp qt/macdockiconhandler.mm \
 	qt/macnotificationhandler.mm qt/res/Proton-qt-res.rc
 @ENABLE_QT_TRUE@am__objects_16 =  \
@@ -1043,19 +1043,19 @@ am__qt_Proton_qt_SOURCES_DIST = qt/Proton.cpp qt/macdockiconhandler.mm \
 qt_Proton_qt_OBJECTS = $(am_qt_Proton_qt_OBJECTS)
 @ENABLE_QT_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_6 =  \
 @ENABLE_QT_TRUE@@ENABLE_ZMQ_TRUE@	$(LIBBITCOIN_ZMQ) \
-@ENABLE_QT_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_3)
+@ENABLE_QT_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_1)
 @ENABLE_QT_TRUE@qt_Proton_qt_DEPENDENCIES = qt/libbitcoinqt.a \
 @ENABLE_QT_TRUE@	$(LIBBITCOIN_SERVER) $(am__append_38) \
 @ENABLE_QT_TRUE@	$(am__DEPENDENCIES_6) $(LIBBITCOIN_CLI) \
 @ENABLE_QT_TRUE@	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
 @ENABLE_QT_TRUE@	$(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
-@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) \
-@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_3) $(LIBSECP256K1) \
-@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
+@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) \
+@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
+@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 qt_Proton_qt_LINK = $(LIBTOOL) $(AM_V_lt) $(qt_Proton_qt_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(OBJCXXLD) $(AM_OBJCXXFLAGS) \
 	$(OBJCXXFLAGS) $(qt_Proton_qt_LDFLAGS) $(LDFLAGS) -o $@
@@ -1079,26 +1079,26 @@ qt_test_test_Proton_qt_OBJECTS = $(am_qt_test_test_Proton_qt_OBJECTS) \
 	$(nodist_qt_test_test_Proton_qt_OBJECTS)
 @ENABLE_QT_TESTS_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_7 =  \
 @ENABLE_QT_TESTS_TRUE@@ENABLE_ZMQ_TRUE@	$(LIBBITCOIN_ZMQ) \
-@ENABLE_QT_TESTS_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_3)
+@ENABLE_QT_TESTS_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_1)
 @ENABLE_QT_TESTS_TRUE@qt_test_test_Proton_qt_DEPENDENCIES =  \
 @ENABLE_QT_TESTS_TRUE@	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
 @ENABLE_QT_TESTS_TRUE@	$(am__append_45) $(am__DEPENDENCIES_7) \
 @ENABLE_QT_TESTS_TRUE@	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
 @ENABLE_QT_TESTS_TRUE@	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-@ENABLE_QT_TESTS_TRUE@	$(LIBUNIVALUE) $(am__DEPENDENCIES_1) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_2) \
+@ENABLE_QT_TESTS_TRUE@	$(LIBUNIVALUE) $(am__DEPENDENCIES_2) \
 @ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) $(LIBSECP256K1) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3) \
-@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_3)
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_QT_TESTS_TRUE@	$(am__DEPENDENCIES_1)
 qt_test_test_Proton_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(qt_test_test_Proton_qt_CXXFLAGS) $(CXXFLAGS) \
@@ -1205,18 +1205,18 @@ test_test_Proton_OBJECTS = $(am_test_test_Proton_OBJECTS) \
 	$(nodist_test_test_Proton_OBJECTS)
 @BUILD_BITCOIN_LIBS_TRUE@am__DEPENDENCIES_8 = libbitcoinconsensus.la
 @ENABLE_TESTS_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_9 =  \
-@ENABLE_TESTS_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_3)
+@ENABLE_TESTS_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_1)
 @ENABLE_TESTS_TRUE@test_test_Proton_DEPENDENCIES =  \
 @ENABLE_TESTS_TRUE@	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) \
 @ENABLE_TESTS_TRUE@	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
 @ENABLE_TESTS_TRUE@	$(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
-@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) \
-@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) \
+@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 @ENABLE_TESTS_TRUE@	$(LIBSECP256K1) $(am__append_25) \
-@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_8) $(am__DEPENDENCIES_3) \
-@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_9)
+@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_8) $(am__DEPENDENCIES_1) \
+@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+@ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_9)
 test_test_Proton_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(test_test_Proton_CXXFLAGS) $(CXXFLAGS) \
@@ -1299,10 +1299,10 @@ SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(libbitcoin_wallet_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) \
 	$(qt_libbitcoinqt_a_SOURCES) \
 	$(nodist_qt_libbitcoinqt_a_SOURCES) \
-	$(libbitcoinconsensus_la_SOURCES) \
-	$(bench_bench_Proton_SOURCES) $(Proton_cli_SOURCES) \
+	$(libbitcoinconsensus_la_SOURCES) $(Proton_cli_SOURCES) \
 	$(Proton_tx_SOURCES) $(Protond_SOURCES) \
-	$(qt_Proton_qt_SOURCES) $(qt_test_test_Proton_qt_SOURCES) \
+	$(bench_bench_Proton_SOURCES) $(qt_Proton_qt_SOURCES) \
+	$(qt_test_test_Proton_qt_SOURCES) \
 	$(nodist_qt_test_test_Proton_qt_SOURCES) \
 	$(test_test_Proton_SOURCES) $(nodist_test_test_Proton_SOURCES)
 DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
@@ -1315,9 +1315,10 @@ DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(am__libbitcoin_zmq_a_SOURCES_DIST) \
 	$(am__qt_libbitcoinqt_a_SOURCES_DIST) \
 	$(am__libbitcoinconsensus_la_SOURCES_DIST) \
-	$(am__bench_bench_Proton_SOURCES_DIST) \
 	$(am__Proton_cli_SOURCES_DIST) $(am__Proton_tx_SOURCES_DIST) \
-	$(am__Protond_SOURCES_DIST) $(am__qt_Proton_qt_SOURCES_DIST) \
+	$(am__Protond_SOURCES_DIST) \
+	$(am__bench_bench_Proton_SOURCES_DIST) \
+	$(am__qt_Proton_qt_SOURCES_DIST) \
 	$(am__qt_test_test_Proton_qt_SOURCES_DIST) \
 	$(am__test_test_Proton_SOURCES_DIST)
 RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
@@ -3617,6 +3618,18 @@ clean-binPROGRAMS:
 	list=`for p in $$list; do echo "$$p"; done | sed 's/$(EXEEXT)$$//'`; \
 	echo " rm -f" $$list; \
 	rm -f $$list
+
+Proton-cli$(EXEEXT): $(Proton_cli_OBJECTS) $(Proton_cli_DEPENDENCIES) $(EXTRA_Proton_cli_DEPENDENCIES) 
+	@rm -f Proton-cli$(EXEEXT)
+	$(AM_V_CXXLD)$(Proton_cli_LINK) $(Proton_cli_OBJECTS) $(Proton_cli_LDADD) $(LIBS)
+
+Proton-tx$(EXEEXT): $(Proton_tx_OBJECTS) $(Proton_tx_DEPENDENCIES) $(EXTRA_Proton_tx_DEPENDENCIES) 
+	@rm -f Proton-tx$(EXEEXT)
+	$(AM_V_CXXLD)$(Proton_tx_LINK) $(Proton_tx_OBJECTS) $(Proton_tx_LDADD) $(LIBS)
+
+Protond$(EXEEXT): $(Protond_OBJECTS) $(Protond_DEPENDENCIES) $(EXTRA_Protond_DEPENDENCIES) 
+	@rm -f Protond$(EXEEXT)
+	$(AM_V_CXXLD)$(Protond_LINK) $(Protond_OBJECTS) $(Protond_LDADD) $(LIBS)
 bench/$(am__dirstamp):
 	@$(MKDIR_P) bench
 	@: > bench/$(am__dirstamp)
@@ -3633,18 +3646,6 @@ bench/bench_bench_Proton-Examples.$(OBJEXT): bench/$(am__dirstamp) \
 bench/bench_Proton$(EXEEXT): $(bench_bench_Proton_OBJECTS) $(bench_bench_Proton_DEPENDENCIES) $(EXTRA_bench_bench_Proton_DEPENDENCIES) bench/$(am__dirstamp)
 	@rm -f bench/bench_Proton$(EXEEXT)
 	$(AM_V_CXXLD)$(bench_bench_Proton_LINK) $(bench_bench_Proton_OBJECTS) $(bench_bench_Proton_LDADD) $(LIBS)
-
-Proton-cli$(EXEEXT): $(Proton_cli_OBJECTS) $(Proton_cli_DEPENDENCIES) $(EXTRA_Proton_cli_DEPENDENCIES)
-	@rm -f Proton-cli$(EXEEXT)
-	$(AM_V_CXXLD)$(Proton_cli_LINK) $(Proton_cli_OBJECTS) $(Proton_cli_LDADD) $(LIBS)
-
-Proton-tx$(EXEEXT): $(Proton_tx_OBJECTS) $(Proton_tx_DEPENDENCIES) $(EXTRA_Proton_tx_DEPENDENCIES)
-	@rm -f Proton-tx$(EXEEXT)
-	$(AM_V_CXXLD)$(Proton_tx_LINK) $(Proton_tx_OBJECTS) $(Proton_tx_LDADD) $(LIBS)
-
-Protond$(EXEEXT): $(Protond_OBJECTS) $(Protond_DEPENDENCIES) $(EXTRA_Protond_DEPENDENCIES)
-	@rm -f Protond$(EXEEXT)
-	$(AM_V_CXXLD)$(Protond_LINK) $(Protond_OBJECTS) $(Protond_LDADD) $(LIBS)
 qt/qt_Proton_qt-Proton.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_Proton_qt-macdockiconhandler.$(OBJEXT): qt/$(am__dirstamp) \
@@ -3852,6 +3853,9 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/Proton_cli-Proton-cli.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/Proton_tx-Proton-tx.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/Protond-Protond.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_cli_a-rpcclient.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_common_a-amount.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_common_a-arith_uint256.Po@am__quote@
@@ -3931,9 +3935,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoinconsensus_la-pubkey.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoinconsensus_la-uint256.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoinconsensus_la-utilstrencodings.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/Proton_cli-Proton-cli.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/Proton_tx-Proton-tx.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/Protond-Protond.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@bench/$(DEPDIR)/bench_bench_Proton-Examples.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@bench/$(DEPDIR)/bench_bench_Proton-bench.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Po@am__quote@
@@ -4025,6 +4026,9 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@primitives/$(DEPDIR)/libbitcoin_common_a-block.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@primitives/$(DEPDIR)/libbitcoin_common_a-transaction.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@primitives/$(DEPDIR)/libbitcoinconsensus_la-transaction.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_Proton_qt-Proton.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_Proton_qt-macdockiconhandler.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_Proton_qt-macnotificationhandler.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-addressbookpage.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-addresstablemodel.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-askpassphrasedialog.Po@am__quote@
@@ -4124,9 +4128,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-walletmodeltransaction.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-walletview.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-winshutdownmonitor.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_Proton_qt-macdockiconhandler.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_Proton_qt-macnotificationhandler.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_Proton_qt-Proton.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/test/$(DEPDIR)/qt_test_test_Proton_qt-compattests.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/test/$(DEPDIR)/qt_test_test_Proton_qt-moc_compattests.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/test/$(DEPDIR)/qt_test_test_Proton_qt-moc_paymentservertests.Po@am__quote@
@@ -8182,48 +8183,6 @@ compat/libbitcoinconsensus_la-glibc_compat.lo: compat/glibc_compat.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoinconsensus_la_CPPFLAGS) $(CPPFLAGS) $(libbitcoinconsensus_la_CXXFLAGS) $(CXXFLAGS) -c -o compat/libbitcoinconsensus_la-glibc_compat.lo `test -f 'compat/glibc_compat.cpp' || echo '$(srcdir)/'`compat/glibc_compat.cpp
 
-bench/bench_bench_Proton-bench_Proton.o: bench/bench_Proton.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-bench_Proton.o -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Tpo -c -o bench/bench_bench_Proton-bench_Proton.o `test -f 'bench/bench_Proton.cpp' || echo '$(srcdir)/'`bench/bench_Proton.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Tpo bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/bench_Proton.cpp' object='bench/bench_bench_Proton-bench_Proton.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-bench_Proton.o `test -f 'bench/bench_Proton.cpp' || echo '$(srcdir)/'`bench/bench_Proton.cpp
-
-bench/bench_bench_Proton-bench_Proton.obj: bench/bench_Proton.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-bench_Proton.obj -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Tpo -c -o bench/bench_bench_Proton-bench_Proton.obj `if test -f 'bench/bench_Proton.cpp'; then $(CYGPATH_W) 'bench/bench_Proton.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/bench_Proton.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Tpo bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/bench_Proton.cpp' object='bench/bench_bench_Proton-bench_Proton.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-bench_Proton.obj `if test -f 'bench/bench_Proton.cpp'; then $(CYGPATH_W) 'bench/bench_Proton.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/bench_Proton.cpp'; fi`
-
-bench/bench_bench_Proton-bench.o: bench/bench.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-bench.o -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-bench.Tpo -c -o bench/bench_bench_Proton-bench.o `test -f 'bench/bench.cpp' || echo '$(srcdir)/'`bench/bench.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-bench.Tpo bench/$(DEPDIR)/bench_bench_Proton-bench.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/bench.cpp' object='bench/bench_bench_Proton-bench.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-bench.o `test -f 'bench/bench.cpp' || echo '$(srcdir)/'`bench/bench.cpp
-
-bench/bench_bench_Proton-bench.obj: bench/bench.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-bench.obj -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-bench.Tpo -c -o bench/bench_bench_Proton-bench.obj `if test -f 'bench/bench.cpp'; then $(CYGPATH_W) 'bench/bench.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/bench.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-bench.Tpo bench/$(DEPDIR)/bench_bench_Proton-bench.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/bench.cpp' object='bench/bench_bench_Proton-bench.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-bench.obj `if test -f 'bench/bench.cpp'; then $(CYGPATH_W) 'bench/bench.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/bench.cpp'; fi`
-
-bench/bench_bench_Proton-Examples.o: bench/Examples.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-Examples.o -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-Examples.Tpo -c -o bench/bench_bench_Proton-Examples.o `test -f 'bench/Examples.cpp' || echo '$(srcdir)/'`bench/Examples.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-Examples.Tpo bench/$(DEPDIR)/bench_bench_Proton-Examples.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/Examples.cpp' object='bench/bench_bench_Proton-Examples.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-Examples.o `test -f 'bench/Examples.cpp' || echo '$(srcdir)/'`bench/Examples.cpp
-
-bench/bench_bench_Proton-Examples.obj: bench/Examples.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-Examples.obj -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-Examples.Tpo -c -o bench/bench_bench_Proton-Examples.obj `if test -f 'bench/Examples.cpp'; then $(CYGPATH_W) 'bench/Examples.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/Examples.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-Examples.Tpo bench/$(DEPDIR)/bench_bench_Proton-Examples.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/Examples.cpp' object='bench/bench_bench_Proton-Examples.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-Examples.obj `if test -f 'bench/Examples.cpp'; then $(CYGPATH_W) 'bench/Examples.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/Examples.cpp'; fi`
-
 Proton_cli-Proton-cli.o: Proton-cli.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(Proton_cli_CPPFLAGS) $(CPPFLAGS) $(Proton_cli_CXXFLAGS) $(CXXFLAGS) -MT Proton_cli-Proton-cli.o -MD -MP -MF $(DEPDIR)/Proton_cli-Proton-cli.Tpo -c -o Proton_cli-Proton-cli.o `test -f 'Proton-cli.cpp' || echo '$(srcdir)/'`Proton-cli.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/Proton_cli-Proton-cli.Tpo $(DEPDIR)/Proton_cli-Proton-cli.Po
@@ -8265,6 +8224,48 @@ Protond-Protond.obj: Protond.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='Protond.cpp' object='Protond-Protond.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(Protond_CPPFLAGS) $(CPPFLAGS) $(Protond_CXXFLAGS) $(CXXFLAGS) -c -o Protond-Protond.obj `if test -f 'Protond.cpp'; then $(CYGPATH_W) 'Protond.cpp'; else $(CYGPATH_W) '$(srcdir)/Protond.cpp'; fi`
+
+bench/bench_bench_Proton-bench_Proton.o: bench/bench_Proton.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-bench_Proton.o -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Tpo -c -o bench/bench_bench_Proton-bench_Proton.o `test -f 'bench/bench_Proton.cpp' || echo '$(srcdir)/'`bench/bench_Proton.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Tpo bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/bench_Proton.cpp' object='bench/bench_bench_Proton-bench_Proton.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-bench_Proton.o `test -f 'bench/bench_Proton.cpp' || echo '$(srcdir)/'`bench/bench_Proton.cpp
+
+bench/bench_bench_Proton-bench_Proton.obj: bench/bench_Proton.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-bench_Proton.obj -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Tpo -c -o bench/bench_bench_Proton-bench_Proton.obj `if test -f 'bench/bench_Proton.cpp'; then $(CYGPATH_W) 'bench/bench_Proton.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/bench_Proton.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Tpo bench/$(DEPDIR)/bench_bench_Proton-bench_Proton.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/bench_Proton.cpp' object='bench/bench_bench_Proton-bench_Proton.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-bench_Proton.obj `if test -f 'bench/bench_Proton.cpp'; then $(CYGPATH_W) 'bench/bench_Proton.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/bench_Proton.cpp'; fi`
+
+bench/bench_bench_Proton-bench.o: bench/bench.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-bench.o -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-bench.Tpo -c -o bench/bench_bench_Proton-bench.o `test -f 'bench/bench.cpp' || echo '$(srcdir)/'`bench/bench.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-bench.Tpo bench/$(DEPDIR)/bench_bench_Proton-bench.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/bench.cpp' object='bench/bench_bench_Proton-bench.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-bench.o `test -f 'bench/bench.cpp' || echo '$(srcdir)/'`bench/bench.cpp
+
+bench/bench_bench_Proton-bench.obj: bench/bench.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-bench.obj -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-bench.Tpo -c -o bench/bench_bench_Proton-bench.obj `if test -f 'bench/bench.cpp'; then $(CYGPATH_W) 'bench/bench.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/bench.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-bench.Tpo bench/$(DEPDIR)/bench_bench_Proton-bench.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/bench.cpp' object='bench/bench_bench_Proton-bench.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-bench.obj `if test -f 'bench/bench.cpp'; then $(CYGPATH_W) 'bench/bench.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/bench.cpp'; fi`
+
+bench/bench_bench_Proton-Examples.o: bench/Examples.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-Examples.o -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-Examples.Tpo -c -o bench/bench_bench_Proton-Examples.o `test -f 'bench/Examples.cpp' || echo '$(srcdir)/'`bench/Examples.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-Examples.Tpo bench/$(DEPDIR)/bench_bench_Proton-Examples.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/Examples.cpp' object='bench/bench_bench_Proton-Examples.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-Examples.o `test -f 'bench/Examples.cpp' || echo '$(srcdir)/'`bench/Examples.cpp
+
+bench/bench_bench_Proton-Examples.obj: bench/Examples.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -MT bench/bench_bench_Proton-Examples.obj -MD -MP -MF bench/$(DEPDIR)/bench_bench_Proton-Examples.Tpo -c -o bench/bench_bench_Proton-Examples.obj `if test -f 'bench/Examples.cpp'; then $(CYGPATH_W) 'bench/Examples.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/Examples.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) bench/$(DEPDIR)/bench_bench_Proton-Examples.Tpo bench/$(DEPDIR)/bench_bench_Proton-Examples.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='bench/Examples.cpp' object='bench/bench_bench_Proton-Examples.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_Proton_CPPFLAGS) $(CPPFLAGS) $(bench_bench_Proton_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_Proton-Examples.obj `if test -f 'bench/Examples.cpp'; then $(CYGPATH_W) 'bench/Examples.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/Examples.cpp'; fi`
 
 qt/qt_Proton_qt-Proton.o: qt/Proton.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_Proton_qt_CPPFLAGS) $(CPPFLAGS) $(qt_Proton_qt_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_Proton_qt-Proton.o -MD -MP -MF qt/$(DEPDIR)/qt_Proton_qt-Proton.Tpo -c -o qt/qt_Proton_qt-Proton.o `test -f 'qt/Proton.cpp' || echo '$(srcdir)/'`qt/Proton.cpp
